@@ -1,0 +1,14 @@
+EXCHANGES:
+    name: "OKX"
+    apiKey: ''
+    secretKey: ''
+    passphrase: ''
+    withdrawals:
+        - currency: "ETH"
+          networks: ["Optimism"]
+          min_amount: 0.0021
+          max_amount: 0.0022
+          max_balance: 0.007
+          wait_for_funds: true
+          max_wait_time: 99999
+          retries: 3

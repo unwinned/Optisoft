@@ -1,0 +1,171 @@
+May-09|09:10:56 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-09|09:10:56 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping all USDT0 balances to ETH...
+May-09|09:10:57 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 4.094899 USDT0 to ETH...
+May-09|09:10:58 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! Actual status=403. Expected=(200, 201)
+May-09|09:10:58 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Response: {"message":"Missing Authentication Token"}
+May-09|09:10:58 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Expected statuses (200, 201), got 403. Attempt 1.
+May-09|09:25:34 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-09|09:25:34 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping all USDT0 balances to ETH...
+May-09|09:25:35 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 4.094899 USDT0 to ETH...
+May-09|09:25:36 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! Actual status=403. Expected=(200, 201)
+May-09|09:25:36 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Response: {"message":"Missing Authentication Token"}
+May-09|09:25:36 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Expected statuses (200, 201), got 403. Attempt 1.
+May-09|09:36:11 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-09|09:36:11 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping all USDT0 balances to ETH...
+May-09|09:36:12 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 4.094899 USDT0 to ETH...
+May-09|09:36:13 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! Actual status=403. Expected=(200, 201)
+May-09|09:36:13 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Response: {"message":"Invalid key=value pair (missing equal-sign) in Authorization header (hashed with SHA-256 and encoded with Base64): 'dmhvAKKrIO6qdgxv1So+u4LeNI/Jq46QtCwiUIx7bgc='."}
+May-09|09:36:13 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Expected statuses (200, 201), got 403. Attempt 1.
+May-09|09:40:13 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-09|09:40:13 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping all USDT0 balances to ETH...
+May-09|09:40:13 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 4.094899 USDT0 to ETH...
+May-09|09:40:14 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! Actual status=403. Expected=(200, 201)
+May-09|09:40:14 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Response: {"message":"Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. Authorization header requires existence of either a 'X-Amz-Date' or a 'Date' header. (Hashed with SHA-256 and encoded with Base64) Authorization=ASBAyDLxopYo4C7+jjCKl6pP0CCbXFp+xb2NG6Xhktw="}
+May-09|09:40:14 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Expected statuses (200, 201), got 403. Attempt 1.
+May-09|09:45:00 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-09|09:45:00 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping all USDT0 balances to ETH...
+May-09|09:45:00 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 4.094899 USDT0 to ETH...
+May-09|09:45:01 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! Actual status=403. Expected=(200, 201)
+May-09|09:45:01 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Response: {"message":"Invalid key=value pair (missing equal-sign) in Authorization header (hashed with SHA-256 and encoded with Base64): 'dmhvAKKrIO6qdgxv1So+u4LeNI/Jq46QtCwiUIx7bgc='."}
+May-09|09:45:01 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Expected statuses (200, 201), got 403. Attempt 1.
+May-09|09:46:04 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-09|09:46:04 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping all USDT0 balances to ETH...
+May-09|09:46:04 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 4.094899 USDT0 to ETH...
+May-09|09:46:05 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! Actual status=403. Expected=(200, 201)
+May-09|09:46:05 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Response: {"message":"Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. (Hashed with SHA-256 and encoded with Base64) Authorization=ASBAyDLxopYo4C7+jjCKl6pP0CCbXFp+xb2NG6Xhktw="}
+May-09|09:46:05 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Expected statuses (200, 201), got 403. Attempt 1.
+May-09|09:46:27 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! Actual status=403. Expected=(200, 201)
+May-09|09:46:27 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Response: {"message":"Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. (Hashed with SHA-256 and encoded with Base64) Authorization=ASBAyDLxopYo4C7+jjCKl6pP0CCbXFp+xb2NG6Xhktw="}
+May-09|09:46:27 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Expected statuses (200, 201), got 403. Attempt 2.
+May-09|09:46:52 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! Actual status=403. Expected=(200, 201)
+May-09|09:46:52 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Response: {"message":"Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. (Hashed with SHA-256 and encoded with Base64) Authorization=ASBAyDLxopYo4C7+jjCKl6pP0CCbXFp+xb2NG6Xhktw="}
+May-09|09:46:52 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Expected statuses (200, 201), got 403. Attempt 3.
+May-09|09:47:18 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! Actual status=403. Expected=(200, 201)
+May-09|09:47:18 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Response: {"message":"Authorization header requires 'Credential' parameter. Authorization header requires 'Signature' parameter. Authorization header requires 'SignedHeaders' parameter. (Hashed with SHA-256 and encoded with Base64) Authorization=ASBAyDLxopYo4C7+jjCKl6pP0CCbXFp+xb2NG6Xhktw="}
+May-09|09:47:18 - swap.get_swap_quote - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Failed to get swap quote: Expected statuses (200, 201), got 403
+May-09|09:47:18 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Failed to get swap quote for USDT0
+May-09|09:47:18 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 10 seconds before next task...
+May-09|09:51:07 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-09|09:51:07 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping all USDT0 balances to ETH...
+May-09|09:51:08 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 4.094899 USDT0 to ETH...
+May-09|09:51:09 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! Actual status=400. Expected=(200, 201)
+May-09|09:51:09 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Response: {"message":"Invalid chain"}
+May-09|09:51:09 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Expected statuses (200, 201), got 400. Attempt 1.
+May-09|09:52:12 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-09|09:52:12 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping all USDT0 balances to ETH...
+May-09|09:52:13 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 4.094899 USDT0 to ETH...
+May-09|09:52:13 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! Actual status=400. Expected=(200, 201)
+May-09|09:52:13 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Response: {"message":"Invalid chain"}
+May-09|09:52:13 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Expected statuses (200, 201), got 400. Attempt 1.
+May-09|09:52:35 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! Actual status=400. Expected=(200, 201)
+May-09|09:52:35 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Response: {"message":"Invalid chain"}
+May-09|09:52:35 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Expected statuses (200, 201), got 400. Attempt 2.
+May-09|10:14:15 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'AttributeError'>: type object 'ChainExplorers' has no attribute 'MONAD'|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 64, in start_activities
+    task_cls = TASKS_MAP[task](session=self.session,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 23, in __init__
+    self.explorer = ChainExplorers.MONAD.value
+                    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'ChainExplorers' has no attribute 'MONAD'
+
+May-09|10:14:15 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-09|10:14:15 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 22 seconds before next task...
+May-09|10:14:57 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-09|10:14:57 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping all USDT0 balances to ETH...
+May-09|10:14:58 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'web3.exceptions.BadFunctionCallOutput'>: Could not transact with/call contract function, is contract deployed correctly and chain synced?|[Traceback (most recent call last):
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\utils.py", line 319, in async_call_contract_function
+    output_data = async_w3.codec.decode(output_types, return_data)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\codec.py", line 162, in decode
+    return cast(Tuple[Any, ...], decoder(stream))
+                                 ^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 131, in __call__
+    return self.decode(stream)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\functional.py", line 47, in inner
+    return callback(fn(*args, **kwargs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 224, in decode
+    self.validate_pointers(stream)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 218, in validate_pointers
+    decoder(stream)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 131, in __call__
+    return self.decode(stream)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 250, in decode
+    raw_data = self.read_data_from_stream(stream)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 389, in read_data_from_stream
+    raise InsufficientDataBytes(
+eth_abi.exceptions.InsufficientDataBytes: Tried to read 32 bytes, only got 0 bytes.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 94, in run
+    tokens_with_balance = await get_tokens_with_any_balance(self, UNISWAP_TOKENS)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Optimistic script\Optisoft\utils\utils.py", line 467, in get_tokens_with_any_balance
+    balance = await token_contract.functions.balanceOf(obj.client.address).call()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\async_contract.py", line 307, in call
+    return await async_call_contract_function(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\utils.py", line 337, in async_call_contract_function
+    raise BadFunctionCallOutput(msg) from e
+web3.exceptions.BadFunctionCallOutput: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+
+May-09|10:14:58 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-09|10:14:58 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 31 seconds before next task...
+May-09|10:21:12 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-09|10:21:12 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping all USDT0 balances to ETH...
+May-09|10:21:12 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'web3.exceptions.BadFunctionCallOutput'>: Could not transact with/call contract function, is contract deployed correctly and chain synced?|[Traceback (most recent call last):
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\utils.py", line 319, in async_call_contract_function
+    output_data = async_w3.codec.decode(output_types, return_data)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\codec.py", line 162, in decode
+    return cast(Tuple[Any, ...], decoder(stream))
+                                 ^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 131, in __call__
+    return self.decode(stream)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\functional.py", line 47, in inner
+    return callback(fn(*args, **kwargs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 224, in decode
+    self.validate_pointers(stream)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 218, in validate_pointers
+    decoder(stream)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 131, in __call__
+    return self.decode(stream)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 250, in decode
+    raw_data = self.read_data_from_stream(stream)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 389, in read_data_from_stream
+    raise InsufficientDataBytes(
+eth_abi.exceptions.InsufficientDataBytes: Tried to read 32 bytes, only got 0 bytes.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 94, in run
+    tokens_with_balance = await get_tokens_with_any_balance(self, UNISWAP_TOKENS)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Optimistic script\Optisoft\utils\utils.py", line 467, in get_tokens_with_any_balance
+    balance = await token_contract.functions.balanceOf(obj.client.address).call()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\async_contract.py", line 307, in call
+    return await async_call_contract_function(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\utils.py", line 337, in async_call_contract_function
+    raise BadFunctionCallOutput(msg) from e
+web3.exceptions.BadFunctionCallOutput: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+
+May-09|10:21:12 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-09|10:21:12 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 36 seconds before next task...

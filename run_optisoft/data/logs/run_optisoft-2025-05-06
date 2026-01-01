@@ -1,0 +1,32 @@
+May-06|17:53:03 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in domains task: <class 'KeyError'>: 'domains'|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 59, in start_activities
+    task_cls = TASKS_MAP[task](session=self.session,
+               ~~~~~~~~~^^^^^^
+KeyError: 'domains'
+
+May-06|17:53:03 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-06|17:53:03 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 33 seconds before next task...
+May-06|17:53:36 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in magic_eden task: <class 'KeyError'>: 'magic_eden'|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 59, in start_activities
+    task_cls = TASKS_MAP[task](session=self.session,
+               ~~~~~~~~~^^^^^^
+KeyError: 'magic_eden'
+
+May-06|17:53:36 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-06|17:53:36 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 33 seconds before next task...
+May-06|17:54:19 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in magic_eden task: <class 'KeyError'>: 'magic_eden'|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 59, in start_activities
+    task_cls = TASKS_MAP[task](session=self.session,
+               ~~~~~~~~~^^^^^^
+KeyError: 'magic_eden'
+
+May-06|17:54:19 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-06|17:54:19 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 56 seconds before next task...
+May-06|17:55:15 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in magic_eden task: <class 'KeyError'>: 'magic_eden'|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 59, in start_activities
+    task_cls = TASKS_MAP[task](session=self.session,
+               ~~~~~~~~~^^^^^^
+KeyError: 'magic_eden'
+
+May-06|17:55:15 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-06|17:55:15 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 37 seconds before next task...

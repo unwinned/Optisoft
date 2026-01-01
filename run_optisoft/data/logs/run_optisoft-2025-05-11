@@ -1,0 +1,1624 @@
+May-11|10:30:25 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|10:30:25 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping all USDT0 balances to ETH...
+May-11|10:30:26 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'web3.exceptions.BadFunctionCallOutput'>: Could not transact with/call contract function, is contract deployed correctly and chain synced?|[Traceback (most recent call last):
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\utils.py", line 319, in async_call_contract_function
+    output_data = async_w3.codec.decode(output_types, return_data)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\codec.py", line 162, in decode
+    return cast(Tuple[Any, ...], decoder(stream))
+                                 ^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 131, in __call__
+    return self.decode(stream)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\functional.py", line 47, in inner
+    return callback(fn(*args, **kwargs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 224, in decode
+    self.validate_pointers(stream)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 218, in validate_pointers
+    decoder(stream)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 131, in __call__
+    return self.decode(stream)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 250, in decode
+    raw_data = self.read_data_from_stream(stream)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 389, in read_data_from_stream
+    raise InsufficientDataBytes(
+eth_abi.exceptions.InsufficientDataBytes: Tried to read 32 bytes, only got 0 bytes.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 139, in run
+    tokens_with_balance = await get_tokens_with_any_balance(self, UNISWAP_TOKENS)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Optimistic script\Optisoft\utils\utils.py", line 467, in get_tokens_with_any_balance
+    balance = await token_contract.functions.balanceOf(obj.client.address).call()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\async_contract.py", line 307, in call
+    return await async_call_contract_function(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\utils.py", line 337, in async_call_contract_function
+    raise BadFunctionCallOutput(msg) from e
+web3.exceptions.BadFunctionCallOutput: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+
+May-11|10:30:26 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|10:30:26 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 29 seconds before next task...
+May-11|10:32:42 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|10:32:42 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping all USDT0 balances to ETH...
+May-11|10:32:43 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'web3.exceptions.BadFunctionCallOutput'>: Could not transact with/call contract function, is contract deployed correctly and chain synced?|[Traceback (most recent call last):
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\utils.py", line 319, in async_call_contract_function
+    output_data = async_w3.codec.decode(output_types, return_data)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\codec.py", line 162, in decode
+    return cast(Tuple[Any, ...], decoder(stream))
+                                 ^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 131, in __call__
+    return self.decode(stream)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\functional.py", line 47, in inner
+    return callback(fn(*args, **kwargs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 224, in decode
+    self.validate_pointers(stream)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 218, in validate_pointers
+    decoder(stream)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 131, in __call__
+    return self.decode(stream)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 250, in decode
+    raw_data = self.read_data_from_stream(stream)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 389, in read_data_from_stream
+    raise InsufficientDataBytes(
+eth_abi.exceptions.InsufficientDataBytes: Tried to read 32 bytes, only got 0 bytes.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 138, in run
+    tokens_with_balance = await get_tokens_with_any_balance(self, UNISWAP_TOKENS)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Optimistic script\Optisoft\utils\utils.py", line 467, in get_tokens_with_any_balance
+    balance = await token_contract.functions.balanceOf(obj.client.address).call()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\async_contract.py", line 307, in call
+    return await async_call_contract_function(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\utils.py", line 337, in async_call_contract_function
+    raise BadFunctionCallOutput(msg) from e
+web3.exceptions.BadFunctionCallOutput: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+
+May-11|10:32:43 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|10:32:43 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 12 seconds before next task...
+May-11|10:35:21 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|10:35:21 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping all USDT0 balances to ETH...
+May-11|10:35:22 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'web3.exceptions.BadFunctionCallOutput'>: Could not transact with/call contract function, is contract deployed correctly and chain synced?|[Traceback (most recent call last):
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\utils.py", line 319, in async_call_contract_function
+    output_data = async_w3.codec.decode(output_types, return_data)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\codec.py", line 162, in decode
+    return cast(Tuple[Any, ...], decoder(stream))
+                                 ^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 131, in __call__
+    return self.decode(stream)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\functional.py", line 47, in inner
+    return callback(fn(*args, **kwargs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 224, in decode
+    self.validate_pointers(stream)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 218, in validate_pointers
+    decoder(stream)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 131, in __call__
+    return self.decode(stream)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 250, in decode
+    raw_data = self.read_data_from_stream(stream)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 389, in read_data_from_stream
+    raise InsufficientDataBytes(
+eth_abi.exceptions.InsufficientDataBytes: Tried to read 32 bytes, only got 0 bytes.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 180, in run
+    tokens_with_balance = await get_tokens_with_any_balance(self, UNISWAP_TOKENS)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Optimistic script\Optisoft\utils\utils.py", line 467, in get_tokens_with_any_balance
+    balance = await token_contract.functions.balanceOf(obj.client.address).call()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\async_contract.py", line 307, in call
+    return await async_call_contract_function(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\utils.py", line 337, in async_call_contract_function
+    raise BadFunctionCallOutput(msg) from e
+web3.exceptions.BadFunctionCallOutput: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+
+May-11|10:35:22 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|10:35:22 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 17 seconds before next task...
+May-11|10:37:11 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|10:37:11 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping all USDT0 balances to ETH...
+May-11|10:37:12 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'web3.exceptions.BadFunctionCallOutput'>: Could not transact with/call contract function, is contract deployed correctly and chain synced?|[Traceback (most recent call last):
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\utils.py", line 319, in async_call_contract_function
+    output_data = async_w3.codec.decode(output_types, return_data)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\codec.py", line 162, in decode
+    return cast(Tuple[Any, ...], decoder(stream))
+                                 ^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 131, in __call__
+    return self.decode(stream)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\functional.py", line 47, in inner
+    return callback(fn(*args, **kwargs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 224, in decode
+    self.validate_pointers(stream)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 218, in validate_pointers
+    decoder(stream)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 131, in __call__
+    return self.decode(stream)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 250, in decode
+    raw_data = self.read_data_from_stream(stream)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 389, in read_data_from_stream
+    raise InsufficientDataBytes(
+eth_abi.exceptions.InsufficientDataBytes: Tried to read 32 bytes, only got 0 bytes.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 139, in run
+    tokens_with_balance = await get_tokens_with_any_balance(self, UNISWAP_TOKENS)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Optimistic script\Optisoft\utils\utils.py", line 467, in get_tokens_with_any_balance
+    balance = await token_contract.functions.balanceOf(obj.client.address).call()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\async_contract.py", line 307, in call
+    return await async_call_contract_function(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\utils.py", line 337, in async_call_contract_function
+    raise BadFunctionCallOutput(msg) from e
+web3.exceptions.BadFunctionCallOutput: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+
+May-11|10:37:12 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|10:37:12 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 26 seconds before next task...
+May-11|10:40:49 - swap._validate_network - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Connected to wrong network: chain ID <coroutine object AsyncEth.chain_id at 0x00000223E5D0A800>, expected 130 (Unichain)
+May-11|10:40:49 - swap._validate_network - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Network validation failed: Invalid network configuration
+May-11|10:40:49 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'ValueError'>: Invalid network configuration|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 64, in start_activities
+    task_cls = TASKS_MAP[task](session=self.session,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 45, in __init__
+    self._validate_network()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 53, in _validate_network
+    raise ValueError("Invalid network configuration")
+ValueError: Invalid network configuration
+
+May-11|10:40:49 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|10:40:49 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 52 seconds before next task...
+May-11|10:42:11 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|10:42:11 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping all USDT0 balances to ETH...
+May-11|10:42:12 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Swap process failed: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+May-11|10:42:12 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 31 seconds before next task...
+May-11|10:44:13 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|10:44:13 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'TypeError'>: object method can't be used in 'await' expression|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 339, in run
+    await self._validate_network
+TypeError: object method can't be used in 'await' expression
+
+May-11|10:44:13 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|10:44:13 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 28 seconds before next task...
+May-11|10:46:13 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|10:46:14 - swap._validate_network - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Connected to wrong network: chain ID 10, expected 130 (Unichain)
+May-11|10:46:14 - swap._validate_network - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Network validation failed: Invalid network configuration
+May-11|10:46:14 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'ValueError'>: Invalid network configuration|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 339, in run
+    await self._validate_network()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 53, in _validate_network
+    raise ValueError("Invalid network configuration")
+ValueError: Invalid network configuration
+
+May-11|10:46:14 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|10:46:14 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 11 seconds before next task...
+May-11|10:47:41 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|10:47:42 - swap._validate_network - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Connected to Unichain (chain ID: 130, latest block: 16201301)
+May-11|10:47:42 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping all USDT0 balances to ETH...
+May-11|10:47:42 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 4.094899 USDT0 to ETH...
+May-11|10:47:42 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - 'types.SimpleNamespace' object has no attribute 'get'. Attempt 1.
+May-11|10:48:09 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - 'types.SimpleNamespace' object has no attribute 'get'. Attempt 2.
+May-11|10:52:44 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|10:52:44 - swap._validate_network - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Connected to Unichain (chain ID: 130, latest block: 16201604)
+May-11|10:52:44 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping all USDT0 balances to ETH...
+May-11|10:52:44 - swap._validate_network - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Connected to Unichain (chain ID: 130, latest block: 16201604)
+May-11|10:52:44 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 4.094899 USDT0 to ETH...
+May-11|10:52:44 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - 'types.SimpleNamespace' object has no attribute 'get'. Attempt 1.
+May-11|10:53:04 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - 'types.SimpleNamespace' object has no attribute 'get'. Attempt 2.
+May-11|11:17:04 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'TypeError'>: AsyncEth.contract() takes from 1 to 2 positional arguments but 3 were given|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 64, in start_activities
+    task_cls = TASKS_MAP[task](session=self.session,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 19, in __init__
+    self.router_contract = self.client.w3.eth.contract(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: AsyncEth.contract() takes from 1 to 2 positional arguments but 3 were given
+
+May-11|11:17:04 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|11:17:04 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 59 seconds before next task...
+May-11|11:19:47 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'TypeError'>: AsyncEth.contract() takes from 1 to 2 positional arguments but 3 were given|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 64, in start_activities
+    task_cls = TASKS_MAP[task](session=self.session,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 19, in __init__
+    self.router_contract = self.client.w3.eth.contract(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: AsyncEth.contract() takes from 1 to 2 positional arguments but 3 were given
+
+May-11|11:19:47 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|11:19:47 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 31 seconds before next task...
+May-11|11:22:02 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|11:22:02 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'TypeError'>: Uniswap.get_quote() missing 3 required positional arguments: 'from_token_address', 'to_token_address', and 'amount_in_wei'|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 205, in run
+    await self.get_quote()
+          ^^^^^^^^^^^^^^^^
+TypeError: Uniswap.get_quote() missing 3 required positional arguments: 'from_token_address', 'to_token_address', and 'amount_in_wei'
+
+May-11|11:22:02 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|11:22:02 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 60 seconds before next task...
+May-11|11:25:17 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|11:25:18 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'TypeError'>: to_wei() missing 1 required positional argument: 'unit'|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 207, in run
+    in_wei = await self.client.w3.to_wei(amount_after_percentage)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: to_wei() missing 1 required positional argument: 'unit'
+
+May-11|11:25:18 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|11:25:18 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 28 seconds before next task...
+May-11|11:27:41 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|11:27:41 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'TypeError'>: Object of type coroutine is not JSON serializable|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 202, in run
+    await self.get_quote(amount_in_wei=in_wei)
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 86, in get_quote
+    response = await self.session.post(url=url, headers=headers, json=payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\curl_cffi\requests\session.py", line 1030, in request
+    req, buffer, header_buffer, q, header_recved, quit_now = self._set_curl_options(
+                                                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\curl_cffi\requests\session.py", line 285, in _set_curl_options
+    body = dumps(json, separators=(",", ":")).encode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type coroutine is not JSON serializable
+
+May-11|11:27:41 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|11:27:41 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 33 seconds before next task...
+May-11|12:11:05 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|12:11:05 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'AttributeError'>: 'Uniswap' object has no attribute 'run'|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+          ^^^^^^^^^^^^
+AttributeError: 'Uniswap' object has no attribute 'run'
+
+May-11|12:11:05 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|12:11:05 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 23 seconds before next task...
+May-11|12:11:53 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|12:11:53 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'TypeError'>: object AsyncContract can't be used in 'await' expression|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 23, in run
+    await self.check_balance()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 17, in check_balance
+    contract = await self.client.w3.eth.contract(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object AsyncContract can't be used in 'await' expression
+
+May-11|12:11:53 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|12:11:53 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 49 seconds before next task...
+May-11|12:12:22 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|12:12:22 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 58 seconds before next task...
+May-11|12:13:05 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|12:13:05 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'AttributeError'>: 'AsyncContract' object has no attribute 'client'|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 23, in run
+    await self.check_balance()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 20, in check_balance
+    await asset_balance(contract, UNISWAP_TOKENS["USDT0"]["address"])
+  File "d:\Optimistic script\Optisoft\utils\utils.py", line 430, in asset_balance
+    contract = await Contract(obj.client).get_contract(
+                              ^^^^^^^^^^
+AttributeError: 'AsyncContract' object has no attribute 'client'
+
+May-11|12:13:05 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|12:13:05 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 49 seconds before next task...
+May-11|12:14:25 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|12:14:26 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'web3.exceptions.BadFunctionCallOutput'>: Could not transact with/call contract function, is contract deployed correctly and chain synced?|[Traceback (most recent call last):
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\utils.py", line 319, in async_call_contract_function
+    output_data = async_w3.codec.decode(output_types, return_data)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\codec.py", line 162, in decode
+    return cast(Tuple[Any, ...], decoder(stream))
+                                 ^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 131, in __call__
+    return self.decode(stream)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\functional.py", line 47, in inner
+    return callback(fn(*args, **kwargs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 224, in decode
+    self.validate_pointers(stream)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 218, in validate_pointers
+    decoder(stream)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 131, in __call__
+    return self.decode(stream)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 250, in decode
+    raw_data = self.read_data_from_stream(stream)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\decoding.py", line 389, in read_data_from_stream
+    raise InsufficientDataBytes(
+eth_abi.exceptions.InsufficientDataBytes: Tried to read 32 bytes, only got 0 bytes.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 23, in run
+    await self.check_balance()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 20, in check_balance
+    await asset_balance(self, UNISWAP_TOKENS["USDT0"]["address"])
+  File "d:\Optimistic script\Optisoft\utils\utils.py", line 433, in asset_balance
+    return await contract.functions.balanceOf(obj.client.address).call()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\async_contract.py", line 307, in call
+    return await async_call_contract_function(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\utils.py", line 337, in async_call_contract_function
+    raise BadFunctionCallOutput(msg) from e
+web3.exceptions.BadFunctionCallOutput: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+
+May-11|12:14:26 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|12:14:26 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 56 seconds before next task...
+May-11|12:15:25 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|12:15:25 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 41 seconds before next task...
+May-11|12:17:09 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|12:17:09 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT) is: 4094899
+May-11|12:17:09 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 29 seconds before next task...
+May-11|12:18:25 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|12:18:25 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'TypeError'>: from_wei() missing 1 required positional argument: 'unit'|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 26, in run
+    await self.check_balance()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 21, in check_balance
+    balance_in_eth = self.client.w3.from_wei(balance)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: from_wei() missing 1 required positional argument: 'unit'
+
+May-11|12:18:25 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|12:18:25 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 31 seconds before next task...
+May-11|12:19:07 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|12:19:08 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12
+May-11|12:19:08 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 53 seconds before next task...
+May-11|12:22:12 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|12:22:12 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'TypeError'>: '<' not supported between instances of 'coroutine' and 'int'|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 28, in run
+    await self.check_balance()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 23, in check_balance
+    balance_of_eth = self.client.w3.from_wei(demo, 'ether')
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\main.py", line 248, in from_wei
+    return from_wei(number, unit)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\currency.py", line 58, in from_wei
+    if number < MIN_WEI or number > MAX_WEI:
+       ^^^^^^^^^^^^^^^^
+TypeError: '<' not supported between instances of 'coroutine' and 'int'
+
+May-11|12:22:12 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|12:22:12 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 50 seconds before next task...
+May-11|12:22:49 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|12:22:49 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|12:22:49 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 34 seconds before next task...
+May-11|13:07:08 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|13:07:08 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|13:07:08 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'TypeError'>: Uniswap.amount_to_swap() missing 1 required positional argument: 'balance_of_eth'|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 50, in run
+    await self.amount_to_swap()
+          ^^^^^^^^^^^^^^^^^^^^^
+TypeError: Uniswap.amount_to_swap() missing 1 required positional argument: 'balance_of_eth'
+
+May-11|13:07:08 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|13:07:08 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 49 seconds before next task...
+May-11|13:08:11 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|13:08:11 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|13:08:11 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|13:08:11 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 0.00157 ETH
+May-11|13:08:11 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 22 seconds before next task...
+May-11|13:09:56 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|13:10:08 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|13:10:08 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|13:10:08 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 0.0015368 ETH
+May-11|13:10:08 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 14 seconds before next task...
+May-11|13:10:48 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|13:10:48 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|13:10:48 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|13:10:48 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 0.0016 ETH
+May-11|13:10:48 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'binascii.Error'>: Non-hexadecimal digit found|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 49, in run
+    await self.prepare_data(await self.amount_to_swap(await self.check_balance()))
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 59, in prepare_data
+    path = self.client.w3.to_bytes(hexstr=token_in.replace("0x", "") + token_out.replace("0x", ""))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\main.py", line 211, in to_bytes
+    return to_bytes(primitive, hexstr, text)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\decorators.py", line 87, in wrapper
+    return to_wrap(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\conversions.py", line 134, in to_bytes
+    return decode_hex(hexstr)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\hexadecimal.py", line 28, in decode_hex
+    return binascii.unhexlify(ascii_hex)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+binascii.Error: Non-hexadecimal digit found
+
+May-11|13:10:48 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|13:10:48 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 20 seconds before next task...
+May-11|13:15:28 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|13:15:29 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|13:15:29 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|13:15:29 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 0.0015 ETH
+May-11|13:15:29 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'eth_abi.exceptions.EncodingTypeError'>: Value `0.0015` of type <class 'float'> cannot be encoded by UnsignedIntegerEncoder|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 49, in run
+    await self.prepare_data(await self.amount_to_swap(await self.check_balance()))
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 62, in prepare_data
+    inputs = self.client.w3.codec.encode(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\codec.py", line 75, in encode
+    return encoder(args)
+           ^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\encoding.py", line 93, in __call__
+    return self.encode(value)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\encoding.py", line 132, in encode
+    self.validate_value(values)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\encoding.py", line 127, in validate_value
+    encoder.validate_value(item)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\encoding.py", line 257, in validate_value
+    self.invalidate_value(value)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\encoding.py", line 87, in invalidate_value
+    raise exc(
+eth_abi.exceptions.EncodingTypeError: Value `0.0015` of type <class 'float'> cannot be encoded by UnsignedIntegerEncoder
+
+May-11|13:15:29 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|13:15:29 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 41 seconds before next task...
+May-11|13:19:40 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|13:19:41 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|13:19:41 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|13:19:41 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 0 ETH
+May-11|13:19:41 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'web3.exceptions.ABIFunctionNotFound'>: ("The function 'execute' was not found in this contract's abi.", ' Are you sure you provided the correct contract abi?')|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 49, in run
+    await self.prepare_data(await self.amount_to_swap(await self.check_balance()))
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 70, in prepare_data
+    method = self.contract.functions.execute(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\async_contract.py", line 423, in __getattr__
+    raise ABIFunctionNotFound(
+web3.exceptions.ABIFunctionNotFound: ("The function 'execute' was not found in this contract's abi.", ' Are you sure you provided the correct contract abi?')
+
+May-11|13:19:41 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|13:19:41 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 29 seconds before next task...
+May-11|13:21:37 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|13:21:37 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'ValueError'>: Could not format invalid value 'd:\\Optimistic script\\Optisoft\\run_optisoft\\data\\abis\\uniswap_router_abi.json' as field 'abi'|[Traceback (most recent call last):
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\applicators.py", line 97, in apply_formatters_to_dict
+    yield key, formatters[key](item)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 253, in normalize_abi
+    abi = json.loads(abi)
+          ^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 50, in run
+    await self.prepare_data(await self.amount_to_swap(await self.check_balance()))
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 21, in check_balance
+    self.contract = self.client.w3.eth.contract(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 753, in contract
+    ContractFactory = ContractFactoryClass.factory(self.w3, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\async_contract.py", line 488, in factory
+    PropertyCheckingFactory(
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\datatypes.py", line 54, in __new__
+    processed_namespace = apply_formatters_to_dict(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\functional.py", line 47, in inner
+    return callback(fn(*args, **kwargs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\applicators.py", line 102, in apply_formatters_to_dict
+    raise ValueError(new_error_message) from exc
+ValueError: Could not format invalid value 'd:\\Optimistic script\\Optisoft\\run_optisoft\\data\\abis\\uniswap_router_abi.json' as field 'abi'
+
+May-11|13:21:37 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|13:21:37 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 15 seconds before next task...
+May-11|13:22:18 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|13:22:19 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|13:22:19 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|13:22:19 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 0 ETH
+May-11|13:22:19 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'web3.exceptions.Web3ValidationError'>: 
+Could not identify the intended function with name `execute`, positional arguments with type(s) `str,(str),int` and keyword arguments with type(s) `{}`.
+Found 2 function(s) with the name `execute`: ['execute(bytes,bytes[])', 'execute(bytes,bytes[],uint256)']
+Function invocation failed due to no matching argument types.|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 50, in run
+    await self.prepare_data(await self.amount_to_swap(await self.check_balance()))
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 71, in prepare_data
+    method = self.contract.functions.execute(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\async_contract.py", line 262, in __call__
+    clone._set_function_info()
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\base_contract.py", line 473, in _set_function_info
+    self.abi = find_matching_fn_abi(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\contracts.py", line 208, in find_matching_fn_abi
+    raise Web3ValidationError(message)
+web3.exceptions.Web3ValidationError: 
+Could not identify the intended function with name `execute`, positional arguments with type(s) `str,(str),int` and keyword arguments with type(s) `{}`.
+Found 2 function(s) with the name `execute`: ['execute(bytes,bytes[])', 'execute(bytes,bytes[],uint256)']
+Function invocation failed due to no matching argument types.
+
+May-11|13:22:19 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|13:22:19 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 28 seconds before next task...
+May-11|13:23:34 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|13:23:35 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|13:23:35 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|13:23:35 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 0 ETH
+May-11|13:23:35 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'web3.exceptions.Web3ValidationError'>: 
+Could not identify the intended function with name `execute`, positional arguments with type(s) `str,(str),int` and keyword arguments with type(s) `{}`.
+Found 1 function(s) with the name `execute`: ['execute(bytes,bytes[],uint256)']
+Function invocation failed due to no matching argument types.|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 50, in run
+    await self.prepare_data(await self.amount_to_swap(await self.check_balance()))
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 71, in prepare_data
+    method = self.contract.functions.execute(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\async_contract.py", line 262, in __call__
+    clone._set_function_info()
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\base_contract.py", line 473, in _set_function_info
+    self.abi = find_matching_fn_abi(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\contracts.py", line 208, in find_matching_fn_abi
+    raise Web3ValidationError(message)
+web3.exceptions.Web3ValidationError: 
+Could not identify the intended function with name `execute`, positional arguments with type(s) `str,(str),int` and keyword arguments with type(s) `{}`.
+Found 1 function(s) with the name `execute`: ['execute(bytes,bytes[],uint256)']
+Function invocation failed due to no matching argument types.
+
+May-11|13:23:35 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|13:23:35 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 57 seconds before next task...
+May-11|13:41:48 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|13:41:48 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|13:41:48 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|13:41:48 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 0 ETH
+May-11|13:41:48 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'web3.exceptions.Web3ValidationError'>: 
+Could not identify the intended function with name `execute`, positional arguments with type(s) `bytes,(str),int` and keyword arguments with type(s) `{}`.
+Found 1 function(s) with the name `execute`: ['execute(bytes,bytes[],uint256)']
+Function invocation failed due to no matching argument types.|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 50, in run
+    await self.prepare_data(await self.amount_to_swap(await self.check_balance()))
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 71, in prepare_data
+    method = self.contract.functions.execute(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\async_contract.py", line 262, in __call__
+    clone._set_function_info()
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\base_contract.py", line 473, in _set_function_info
+    self.abi = find_matching_fn_abi(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\contracts.py", line 208, in find_matching_fn_abi
+    raise Web3ValidationError(message)
+web3.exceptions.Web3ValidationError: 
+Could not identify the intended function with name `execute`, positional arguments with type(s) `bytes,(str),int` and keyword arguments with type(s) `{}`.
+Found 1 function(s) with the name `execute`: ['execute(bytes,bytes[],uint256)']
+Function invocation failed due to no matching argument types.
+
+May-11|13:41:48 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|13:41:48 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 44 seconds before next task...
+May-11|13:42:38 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|13:42:39 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|13:42:39 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|13:42:39 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 0 ETH
+May-11|13:42:39 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'web3.exceptions.Web3ValidationError'>: 
+Could not identify the intended function with name `execute`, positional arguments with type(s) `bytes,(str),int` and keyword arguments with type(s) `{}`.
+Found 1 function(s) with the name `execute`: ['execute(bytes,bytes[],uint256)']
+Function invocation failed due to no matching argument types.|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 50, in run
+    await self.prepare_data(await self.amount_to_swap(await self.check_balance()))
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 71, in prepare_data
+    method = self.contract.functions.execute(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\async_contract.py", line 262, in __call__
+    clone._set_function_info()
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\base_contract.py", line 473, in _set_function_info
+    self.abi = find_matching_fn_abi(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\contracts.py", line 208, in find_matching_fn_abi
+    raise Web3ValidationError(message)
+web3.exceptions.Web3ValidationError: 
+Could not identify the intended function with name `execute`, positional arguments with type(s) `bytes,(str),int` and keyword arguments with type(s) `{}`.
+Found 1 function(s) with the name `execute`: ['execute(bytes,bytes[],uint256)']
+Function invocation failed due to no matching argument types.
+
+May-11|13:42:39 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|13:42:39 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 60 seconds before next task...
+May-11|13:45:11 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|13:45:11 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|13:45:11 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|13:45:11 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 0 ETH
+May-11|13:45:11 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 59 seconds before next task...
+May-11|13:46:58 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|13:46:59 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|13:46:59 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|13:46:59 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 0 ETH
+May-11|13:46:59 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 17 seconds before next task...
+May-11|13:49:27 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|13:49:27 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|13:49:27 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|13:49:27 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 0 ETH
+May-11|13:49:32 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'web3.exceptions.ContractLogicError'>: execution reverted|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 51, in run
+    await self.prepare_data(await self.amount_to_swap(await self.check_balance()))
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 78, in prepare_data
+    await method.call()
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\async_contract.py", line 307, in call
+    return await async_call_contract_function(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\utils.py", line 304, in async_call_contract_function
+    return_data = await async_w3.eth.call(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 271, in call
+    return await self._durin_call(transaction, block_identifier, state_override)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 290, in _durin_call
+    return await self._call(transaction, block_identifier, state_override)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\module.py", line 118, in caller
+    result = await async_w3.manager.coro_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 341, in coro_request
+    return self.formatted_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 287, in formatted_response
+    apply_error_formatters(error_formatters, response)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 104, in apply_error_formatters
+    formatted_resp = pipe(response, error_formatters)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\error_formatters_utils.py", line 165, in raise_contract_logic_error_on_revert
+    raise ContractLogicError("execution reverted", data=data)
+web3.exceptions.ContractLogicError: execution reverted
+
+May-11|13:49:32 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|13:49:32 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 47 seconds before next task...
+May-11|13:52:05 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|13:52:06 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|13:52:06 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|13:52:06 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 2047449 ETH
+May-11|13:52:06 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'web3.exceptions.ContractLogicError'>: execution reverted|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 50, in run
+    await self.prepare_data(await self.amount_to_swap(await self.check_balance()))
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 77, in prepare_data
+    await method.call()
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\async_contract.py", line 307, in call
+    return await async_call_contract_function(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\utils.py", line 304, in async_call_contract_function
+    return_data = await async_w3.eth.call(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 271, in call
+    return await self._durin_call(transaction, block_identifier, state_override)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 290, in _durin_call
+    return await self._call(transaction, block_identifier, state_override)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\module.py", line 118, in caller
+    result = await async_w3.manager.coro_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 341, in coro_request
+    return self.formatted_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 287, in formatted_response
+    apply_error_formatters(error_formatters, response)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 104, in apply_error_formatters
+    formatted_resp = pipe(response, error_formatters)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\error_formatters_utils.py", line 165, in raise_contract_logic_error_on_revert
+    raise ContractLogicError("execution reverted", data=data)
+web3.exceptions.ContractLogicError: execution reverted
+
+May-11|13:52:06 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|13:52:06 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 19 seconds before next task...
+May-11|13:53:17 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|13:53:17 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|13:53:17 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|13:53:17 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'TypeError'>: from_wei() missing 1 required positional argument: 'unit'|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 49, in run
+    await self.amount_to_swap(await self.check_balance())
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 42, in amount_to_swap
+    balance_ether_percentage = self.client.w3.from_wei(balance_wei_percentage)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: from_wei() missing 1 required positional argument: 'unit'
+
+May-11|13:53:17 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|13:53:17 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 12 seconds before next task...
+May-11|13:54:04 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|13:54:04 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|13:54:04 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|13:54:04 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 2.047449E-12 USDT0
+May-11|13:54:04 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 25 seconds before next task...
+May-11|13:56:01 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|13:56:03 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|13:56:03 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|13:56:03 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 0 USDT0
+May-11|13:56:03 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 43 seconds before next task...
+May-11|14:21:42 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|14:21:42 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|14:21:42 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|14:21:42 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'TypeError'>: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 53, in run
+    await self.amount_to_swap(await self.check_balance())
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 45, in amount_to_swap
+    balance_reduced = balance_in_eth * 0.95
+                      ~~~~~~~~~~~~~~~^~~~~~
+TypeError: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'
+
+May-11|14:21:42 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|14:21:42 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 38 seconds before next task...
+May-11|14:23:06 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|14:23:17 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|14:23:17 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|14:23:17 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'TypeError'>: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 53, in run
+    await self.amount_to_swap(await self.check_balance())
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 45, in amount_to_swap
+    balance_reduced = balance_ether_percentage * 0.95
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+TypeError: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'
+
+May-11|14:23:17 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|14:23:17 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 17 seconds before next task...
+May-11|14:25:28 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|14:25:29 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|14:25:29 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|14:25:29 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'TypeError'>: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 53, in run
+    await self.amount_to_swap(await self.check_balance())
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 45, in amount_to_swap
+    balance_reduced = balance_ether_percentage * 0.95
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+TypeError: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'
+
+May-11|14:25:29 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|14:25:29 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 23 seconds before next task...
+May-11|14:27:52 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|14:27:52 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|14:27:52 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|14:27:52 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 0 USDT0
+May-11|14:27:52 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 49 seconds before next task...
+May-11|14:31:33 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|14:31:37 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|14:31:37 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|14:31:37 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 0.49 USDT0
+May-11|14:31:37 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 34 seconds before next task...
+May-11|14:33:13 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|14:33:13 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|14:33:13 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|14:33:13 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 0 USDT0
+May-11|14:33:13 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 51 seconds before next task...
+May-11|14:35:46 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|14:35:57 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|14:35:57 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|14:35:57 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 0 USDT0
+May-11|14:35:57 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 13 seconds before next task...
+May-11|14:37:15 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|14:37:21 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|14:37:21 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|14:37:21 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 2.0474495E-10 USDT0
+May-11|14:37:21 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 13 seconds before next task...
+May-11|14:38:25 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|14:38:25 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|14:38:25 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|14:38:25 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'TypeError'>: unsupported operand type(s) for -: 'decimal.Decimal' and 'float'|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 52, in run
+    await self.amount_to_swap(await self.check_balance())
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 44, in amount_to_swap
+    balance_rounded = int(balance_ether_percentage - 0.5)
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+TypeError: unsupported operand type(s) for -: 'decimal.Decimal' and 'float'
+
+May-11|14:38:25 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|14:38:25 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 13 seconds before next task...
+May-11|14:39:22 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|14:39:22 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|14:39:22 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|14:39:22 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 0 USDT0 and 0
+May-11|14:39:22 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 42 seconds before next task...
+May-11|14:43:57 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|14:43:58 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|14:43:58 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|14:43:58 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'UnboundLocalError'>: cannot access local variable 'balance_ether_percentage' where it is not associated with a value|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 55, in run
+    await self.amount_to_swap(await self.check_balance())
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 42, in amount_to_swap
+    balance_reduced = balance_ether_percentage * Decimal('0.95')  # Remove 5%
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'balance_ether_percentage' where it is not associated with a value
+
+May-11|14:43:58 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|14:43:58 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 54 seconds before next task...
+May-11|14:46:07 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|14:46:07 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|14:46:07 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|14:46:07 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 2.0065E-12 USDT0 and 0
+May-11|14:46:07 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 30 seconds before next task...
+May-11|14:47:19 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|14:47:31 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|14:47:31 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|14:47:31 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 2.129347E-12 USDT0 and 0
+May-11|14:47:31 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 58 seconds before next task...
+May-11|14:54:56 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|14:54:57 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|14:54:57 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|14:54:57 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 3.685409E-12 USDT0 and 0
+May-11|14:54:57 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 19 seconds before next task...
+May-11|14:56:12 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|14:56:12 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'AttributeError'>: 'Client' object has no attribute 'w3_to_wei'|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 54, in run
+    await self.amount_to_swap(await self.check_balance())
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 26, in check_balance
+    balance_in_eth = self.client.w3_to_wei("50", 'ether')
+                     ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Client' object has no attribute 'w3_to_wei'
+
+May-11|14:56:12 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|14:56:12 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 14 seconds before next task...
+May-11|14:56:55 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|14:56:56 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 50000000000000000000 and ETH is: 0.003136420880266357
+May-11|14:56:56 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|14:56:56 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 45000000000000000000 USDT0 and 42750000000000000000
+May-11|14:56:56 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 39 seconds before next task...
+May-11|14:58:30 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|14:58:30 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'TypeError'>: to_wei() missing 1 required positional argument: 'unit'|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 54, in run
+    await self.amount_to_swap(await self.check_balance())
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 26, in check_balance
+    balance_in_eth = self.client.w3.to_wei("50")
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: to_wei() missing 1 required positional argument: 'unit'
+
+May-11|14:58:30 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|14:58:30 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 37 seconds before next task...
+May-11|15:09:18 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|15:09:19 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 10 and ETH is: 0.003136420880266357
+May-11|15:09:19 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|15:09:19 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 9 USDT0 and 9
+May-11|15:09:19 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 41 seconds before next task...
+May-11|15:10:14 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|15:10:26 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 10 and ETH is: 0.003136420880266357
+May-11|15:10:26 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|15:10:26 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 8.8 USDT0 and 8
+May-11|15:10:26 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 44 seconds before next task...
+May-11|15:39:56 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|15:39:56 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|15:39:56 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|15:39:56 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 0.0025922518575401435 ETH and
+May-11|15:39:56 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 54 seconds before next task...
+May-11|15:43:38 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|15:43:38 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|15:43:38 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|15:43:38 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 0.00265184385426520415 ETH and
+May-11|15:43:38 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'eth_abi.exceptions.EncodingTypeError'>: Value `Decimal('0.00265184385426520415')` of type <class 'decimal.Decimal'> cannot be encoded by UnsignedIntegerEncoder|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 53, in run
+    await self.prepare_data(await self.amount_to_swap(await self.check_balance()))
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 66, in prepare_data
+    inputs = self.client.w3.codec.encode(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\codec.py", line 75, in encode
+    return encoder(args)
+           ^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\encoding.py", line 93, in __call__
+    return self.encode(value)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\encoding.py", line 132, in encode
+    self.validate_value(values)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\encoding.py", line 127, in validate_value
+    encoder.validate_value(item)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\encoding.py", line 257, in validate_value
+    self.invalidate_value(value)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\encoding.py", line 87, in invalidate_value
+    raise exc(
+eth_abi.exceptions.EncodingTypeError: Value `Decimal('0.00265184385426520415')` of type <class 'decimal.Decimal'> cannot be encoded by UnsignedIntegerEncoder
+
+May-11|15:43:38 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|15:43:38 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 32 seconds before next task...
+May-11|15:49:08 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|15:49:09 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|15:49:09 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|15:49:09 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 0.000026816398526277 ETH and
+May-11|15:49:09 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'eth_abi.exceptions.EncodingTypeError'>: Value `Decimal('26816398526277')` of type <class 'decimal.Decimal'> cannot be encoded by UnsignedIntegerEncoder|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 53, in run
+    await self.prepare_data(await self.amount_to_swap(await self.check_balance()))
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 66, in prepare_data
+    inputs = self.client.w3.codec.encode(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\codec.py", line 75, in encode
+    return encoder(args)
+           ^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\encoding.py", line 93, in __call__
+    return self.encode(value)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\encoding.py", line 132, in encode
+    self.validate_value(values)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\encoding.py", line 127, in validate_value
+    encoder.validate_value(item)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\encoding.py", line 257, in validate_value
+    self.invalidate_value(value)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_abi\encoding.py", line 87, in invalidate_value
+    raise exc(
+eth_abi.exceptions.EncodingTypeError: Value `Decimal('26816398526277')` of type <class 'decimal.Decimal'> cannot be encoded by UnsignedIntegerEncoder
+
+May-11|15:49:09 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|15:49:09 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 58 seconds before next task...
+May-11|15:55:54 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|15:55:54 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|15:55:54 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|15:55:54 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 0 ETH and 0
+May-11|15:55:54 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'web3.exceptions.ContractLogicError'>: execution reverted|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 53, in run
+    await self.prepare_data(await self.amount_to_swap(await self.check_balance()))
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 80, in prepare_data
+    await method.call()
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\async_contract.py", line 307, in call
+    return await async_call_contract_function(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\utils.py", line 304, in async_call_contract_function
+    return_data = await async_w3.eth.call(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 271, in call
+    return await self._durin_call(transaction, block_identifier, state_override)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 290, in _durin_call
+    return await self._call(transaction, block_identifier, state_override)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\module.py", line 118, in caller
+    result = await async_w3.manager.coro_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 341, in coro_request
+    return self.formatted_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 287, in formatted_response
+    apply_error_formatters(error_formatters, response)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 104, in apply_error_formatters
+    formatted_resp = pipe(response, error_formatters)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\error_formatters_utils.py", line 165, in raise_contract_logic_error_on_revert
+    raise ContractLogicError("execution reverted", data=data)
+web3.exceptions.ContractLogicError: execution reverted
+
+May-11|15:55:54 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|15:55:54 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 45 seconds before next task...
+May-11|15:58:58 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|15:58:59 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|15:58:59 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|15:58:59 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 0 ETH and 0
+May-11|15:58:59 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 42 seconds before next task...
+May-11|15:59:56 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|15:59:56 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|15:59:56 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|15:59:56 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 0.002622047855902674 ETH and 2760050374634394
+May-11|15:59:56 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 25 seconds before next task...
+May-11|16:03:08 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|16:03:08 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|16:03:08 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|16:03:08 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 0.002681639852627734 ETH and 2822778792239721
+May-11|16:03:08 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 19 seconds before next task...
+May-11|16:05:52 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|16:05:52 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|16:05:52 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|16:05:52 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 0.002681639852627734 ETH and 2822778792239721
+May-11|16:05:52 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 15 seconds before next task...
+May-11|16:06:29 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|16:06:29 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|16:06:29 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|16:06:29 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 0.002622047855902674 ETH and 2760050374634394
+May-11|16:06:29 - swap.prepare_data - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - SUCCESS - Call passed successfully
+May-11|16:06:29 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'web3.exceptions.ContractLogicError'>: execution reverted|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 59, in run
+    await self.prepare_data(await self.amount_to_swap(await self.check_balance()))
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 88, in prepare_data
+    raise e
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 86, in prepare_data
+    await method.call()
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\async_contract.py", line 307, in call
+    return await async_call_contract_function(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\utils.py", line 304, in async_call_contract_function
+    return_data = await async_w3.eth.call(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 271, in call
+    return await self._durin_call(transaction, block_identifier, state_override)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 290, in _durin_call
+    return await self._call(transaction, block_identifier, state_override)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\module.py", line 118, in caller
+    result = await async_w3.manager.coro_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 341, in coro_request
+    return self.formatted_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 287, in formatted_response
+    apply_error_formatters(error_formatters, response)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 104, in apply_error_formatters
+    formatted_resp = pipe(response, error_formatters)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\error_formatters_utils.py", line 165, in raise_contract_logic_error_on_revert
+    raise ContractLogicError("execution reverted", data=data)
+web3.exceptions.ContractLogicError: execution reverted
+
+May-11|16:06:29 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|16:06:29 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 27 seconds before next task...
+May-11|16:12:22 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|16:12:23 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|16:12:23 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|16:12:23 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 0.002622047855902674 ETH and 2760050374634394
+May-11|16:12:23 - swap.prepare_data - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - SUCCESS - Call passed successfully
+May-11|16:12:23 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'web3.exceptions.ContractCustomError'>: 0xd81b2f2e0000000000000000000000000000000000000000000000000000000000000000|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 59, in run
+    await self.prepare_data(await self.amount_to_swap(await self.check_balance()))
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 95, in prepare_data
+    raise e
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 93, in prepare_data
+    await method.call()
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\async_contract.py", line 307, in call
+    return await async_call_contract_function(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\utils.py", line 304, in async_call_contract_function
+    return_data = await async_w3.eth.call(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 271, in call
+    return await self._durin_call(transaction, block_identifier, state_override)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 290, in _durin_call
+    return await self._call(transaction, block_identifier, state_override)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\module.py", line 118, in caller
+    result = await async_w3.manager.coro_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 341, in coro_request
+    return self.formatted_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 287, in formatted_response
+    apply_error_formatters(error_formatters, response)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 104, in apply_error_formatters
+    formatted_resp = pipe(response, error_formatters)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\error_formatters_utils.py", line 157, in raise_contract_logic_error_on_revert
+    _raise_contract_error(data)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\error_formatters_utils.py", line 129, in _raise_contract_error
+    raise ContractCustomError(response_error_data, data=response_error_data)
+web3.exceptions.ContractCustomError: 0xd81b2f2e0000000000000000000000000000000000000000000000000000000000000000
+
+May-11|16:12:23 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|16:12:23 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 43 seconds before next task...
+May-11|16:14:22 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|16:14:22 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|16:14:22 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|16:14:22 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 0.002681639852627734 ETH and 2822778792239721
+May-11|16:14:22 - swap.prepare_data - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - SUCCESS - Call passed successfully
+May-11|16:14:22 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'web3.exceptions.ContractCustomError'>: 0xd81b2f2e0000000000000000000000000000000000000000000000000000000000000000|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 59, in run
+    await self.prepare_data(await self.amount_to_swap(await self.check_balance()))
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 95, in prepare_data
+    raise e
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 93, in prepare_data
+    await method.call()
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\async_contract.py", line 307, in call
+    return await async_call_contract_function(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\utils.py", line 304, in async_call_contract_function
+    return_data = await async_w3.eth.call(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 271, in call
+    return await self._durin_call(transaction, block_identifier, state_override)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 290, in _durin_call
+    return await self._call(transaction, block_identifier, state_override)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\module.py", line 118, in caller
+    result = await async_w3.manager.coro_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 341, in coro_request
+    return self.formatted_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 287, in formatted_response
+    apply_error_formatters(error_formatters, response)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 104, in apply_error_formatters
+    formatted_resp = pipe(response, error_formatters)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\error_formatters_utils.py", line 157, in raise_contract_logic_error_on_revert
+    _raise_contract_error(data)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\error_formatters_utils.py", line 129, in _raise_contract_error
+    raise ContractCustomError(response_error_data, data=response_error_data)
+web3.exceptions.ContractCustomError: 0xd81b2f2e0000000000000000000000000000000000000000000000000000000000000000
+
+May-11|16:14:22 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|16:14:22 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 59 seconds before next task...
+May-11|16:17:25 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|16:17:25 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|16:17:25 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|16:17:25 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 0.002622047855902674 ETH and 2760050374634394
+May-11|16:17:25 - swap.prepare_data - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - SUCCESS - Call passed successfully
+May-11|16:17:25 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'web3.exceptions.ContractCustomError'>: 0xd81b2f2e0000000000000000000000000000000000000000000000000000000000000000|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 59, in run
+    await self.prepare_data(await self.amount_to_swap(await self.check_balance()))
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 98, in prepare_data
+    raise e
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 96, in prepare_data
+    await method.call()
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\async_contract.py", line 307, in call
+    return await async_call_contract_function(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\utils.py", line 304, in async_call_contract_function
+    return_data = await async_w3.eth.call(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 271, in call
+    return await self._durin_call(transaction, block_identifier, state_override)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 290, in _durin_call
+    return await self._call(transaction, block_identifier, state_override)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\module.py", line 118, in caller
+    result = await async_w3.manager.coro_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 341, in coro_request
+    return self.formatted_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 287, in formatted_response
+    apply_error_formatters(error_formatters, response)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 104, in apply_error_formatters
+    formatted_resp = pipe(response, error_formatters)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\error_formatters_utils.py", line 157, in raise_contract_logic_error_on_revert
+    _raise_contract_error(data)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\error_formatters_utils.py", line 129, in _raise_contract_error
+    raise ContractCustomError(response_error_data, data=response_error_data)
+web3.exceptions.ContractCustomError: 0xd81b2f2e0000000000000000000000000000000000000000000000000000000000000000
+
+May-11|16:17:25 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|16:17:25 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 44 seconds before next task...
+May-11|16:26:33 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|16:26:34 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003136420880266357
+May-11|16:26:34 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|16:26:34 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 0.002622047855902674 ETH and 2760050374634394
+May-11|16:26:34 - swap.prepare_data - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - SUCCESS - Call passed successfully
+May-11|16:26:34 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'AttributeError'>: 'Uniswap' object has no attribute 'check_pool_exists'|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 59, in run
+    await self.prepare_data(await self.amount_to_swap(await self.check_balance()))
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 97, in prepare_data
+    raise e
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 75, in prepare_data
+    if await self.check_pool_exists(token_in, token_out, fee):
+             ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Uniswap' object has no attribute 'check_pool_exists'
+
+May-11|16:26:34 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|16:26:34 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 51 seconds before next task...
+May-11|16:47:07 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|16:47:08 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.00313599511418341
+May-11|16:47:08 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|16:47:08 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 0.00262169191545733 ETH and 2759675700481400
+May-11|16:47:08 - swap.prepare_data - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - SUCCESS - Call passed successfully
+May-11|16:47:08 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'web3.exceptions.ContractLogicError'>: execution reverted|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 60, in run
+    await self.prepare_data(await self.amount_to_swap(await self.check_balance()))
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 97, in prepare_data
+    raise e
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 95, in prepare_data
+    await method.call()
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\async_contract.py", line 307, in call
+    return await async_call_contract_function(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\utils.py", line 304, in async_call_contract_function
+    return_data = await async_w3.eth.call(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 271, in call
+    return await self._durin_call(transaction, block_identifier, state_override)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 290, in _durin_call
+    return await self._call(transaction, block_identifier, state_override)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\module.py", line 118, in caller
+    result = await async_w3.manager.coro_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 341, in coro_request
+    return self.formatted_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 287, in formatted_response
+    apply_error_formatters(error_formatters, response)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 104, in apply_error_formatters
+    formatted_resp = pipe(response, error_formatters)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\error_formatters_utils.py", line 165, in raise_contract_logic_error_on_revert
+    raise ContractLogicError("execution reverted", data=data)
+web3.exceptions.ContractLogicError: execution reverted
+
+May-11|16:47:08 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|16:47:08 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 36 seconds before next task...
+May-11|17:04:25 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|17:04:26 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.00313599511418341
+May-11|17:04:26 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|17:04:26 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 0.002651483869042072 ETH and 2791035651623234
+May-11|17:04:26 - swap.prepare_data - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - SUCCESS - Call passed successfully
+May-11|17:04:26 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'AttributeError'>: 'str' object has no attribute 'logger'|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\utils\utils.py", line 382, in wrapper
+    tx_hash = await func(obj, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: approve_asset() missing 1 required positional argument: 'spender'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 64, in run
+    await self.prepare_data(await self.amount_to_swap(await self.check_balance()))
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 102, in prepare_data
+    raise e
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 99, in prepare_data
+    await approve_asset(token_out, self.permit_contract)
+  File "d:\Optimistic script\Optisoft\utils\utils.py", line 398, in wrapper
+    obj.logger.error(f'Error! {type(e)}{e}. Trying again...')
+    ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'logger'. Did you mean: 'lower'?
+
+May-11|17:04:26 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|17:04:26 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 35 seconds before next task...
+May-11|17:05:58 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|17:05:58 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.00313599511418341
+May-11|17:05:58 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|17:05:58 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 0.002591899961872587 ETH and 2728315749339566
+May-11|17:05:58 - utils.approve_asset - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting approving...
+May-11|17:06:07 - utils.wrapper - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - SUCCESS - Asset successfully approved
+May-11|17:06:10 - swap.prepare_data - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - SUCCESS - Call passed successfully
+May-11|17:06:10 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'web3.exceptions.ContractLogicError'>: execution reverted|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 64, in run
+    await self.prepare_data(await self.amount_to_swap(await self.check_balance()))
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 102, in prepare_data
+    raise e
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 100, in prepare_data
+    await method.call()
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\async_contract.py", line 307, in call
+    return await async_call_contract_function(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\utils.py", line 304, in async_call_contract_function
+    return_data = await async_w3.eth.call(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 271, in call
+    return await self._durin_call(transaction, block_identifier, state_override)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 290, in _durin_call
+    return await self._call(transaction, block_identifier, state_override)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\module.py", line 118, in caller
+    result = await async_w3.manager.coro_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 341, in coro_request
+    return self.formatted_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 287, in formatted_response
+    apply_error_formatters(error_formatters, response)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 104, in apply_error_formatters
+    formatted_resp = pipe(response, error_formatters)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\error_formatters_utils.py", line 165, in raise_contract_logic_error_on_revert
+    raise ContractLogicError("execution reverted", data=data)
+web3.exceptions.ContractLogicError: execution reverted
+
+May-11|17:06:10 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|17:06:10 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 15 seconds before next task...
+May-11|17:06:47 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|17:06:47 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003135911339964968
+May-11|17:06:47 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|17:06:47 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 0.002591830722481045 ETH and 2728242865769522
+May-11|17:06:47 - utils.approve_asset - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting approving...
+May-11|17:06:59 - utils.wrapper - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - SUCCESS - Asset successfully approved
+May-11|17:07:02 - swap.prepare_data - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - SUCCESS - Call passed successfully
+May-11|17:07:02 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'web3.exceptions.ContractLogicError'>: execution reverted|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 64, in run
+    await self.prepare_data(await self.amount_to_swap(await self.check_balance()))
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 102, in prepare_data
+    raise e
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 100, in prepare_data
+    await method.call()
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\async_contract.py", line 307, in call
+    return await async_call_contract_function(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\utils.py", line 304, in async_call_contract_function
+    return_data = await async_w3.eth.call(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 271, in call
+    return await self._durin_call(transaction, block_identifier, state_override)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 290, in _durin_call
+    return await self._call(transaction, block_identifier, state_override)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\module.py", line 118, in caller
+    result = await async_w3.manager.coro_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 341, in coro_request
+    return self.formatted_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 287, in formatted_response
+    apply_error_formatters(error_formatters, response)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 104, in apply_error_formatters
+    formatted_resp = pipe(response, error_formatters)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\error_formatters_utils.py", line 165, in raise_contract_logic_error_on_revert
+    raise ContractLogicError("execution reverted", data=data)
+web3.exceptions.ContractLogicError: execution reverted
+
+May-11|17:07:02 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|17:07:02 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 14 seconds before next task...
+May-11|17:07:38 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|17:07:38 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 4.094899E-12 and ETH is: 0.003135848328589056
+May-11|17:07:38 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|17:07:38 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 0.00262156920270045 ETH and 2759546529158369
+May-11|17:07:38 - utils.approve_asset - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting approving...
+May-11|17:07:49 - utils.wrapper - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - SUCCESS - Asset successfully approved
+May-11|17:07:53 - swap.prepare_data - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - SUCCESS - Call passed successfully
+May-11|17:07:53 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'web3.exceptions.ContractLogicError'>: execution reverted|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 64, in run
+    await self.prepare_data(await self.amount_to_swap(await self.check_balance()))
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 102, in prepare_data
+    raise e
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 100, in prepare_data
+    await method.call()
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\async_contract.py", line 307, in call
+    return await async_call_contract_function(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\utils.py", line 304, in async_call_contract_function
+    return_data = await async_w3.eth.call(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 271, in call
+    return await self._durin_call(transaction, block_identifier, state_override)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 290, in _durin_call
+    return await self._call(transaction, block_identifier, state_override)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\module.py", line 118, in caller
+    result = await async_w3.manager.coro_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 341, in coro_request
+    return self.formatted_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 287, in formatted_response
+    apply_error_formatters(error_formatters, response)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 104, in apply_error_formatters
+    formatted_resp = pipe(response, error_formatters)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\error_formatters_utils.py", line 165, in raise_contract_logic_error_on_revert
+    raise ContractLogicError("execution reverted", data=data)
+web3.exceptions.ContractLogicError: execution reverted
+
+May-11|17:07:53 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|17:07:53 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 36 seconds before next task...
+May-11|17:22:44 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|17:22:44 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 3.094899E-12 and ETH is: 0.003538262884106273
+May-11|17:22:44 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|17:22:44 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 0.003025214765910862 ETH and 3184436595695645
+May-11|17:22:44 - utils.approve_asset - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting approving...
+May-11|17:22:52 - utils.wrapper - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - SUCCESS - Asset successfully approved
+May-11|17:22:55 - swap.prepare_data - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - SUCCESS - Call passed successfully
+May-11|17:22:55 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'web3.exceptions.ContractLogicError'>: execution reverted|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 64, in run
+    await self.prepare_data(await self.amount_to_swap(await self.check_balance()))
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 102, in prepare_data
+    raise e
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 100, in prepare_data
+    await method.call()
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\async_contract.py", line 307, in call
+    return await async_call_contract_function(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\utils.py", line 304, in async_call_contract_function
+    return_data = await async_w3.eth.call(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 271, in call
+    return await self._durin_call(transaction, block_identifier, state_override)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 290, in _durin_call
+    return await self._call(transaction, block_identifier, state_override)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\module.py", line 118, in caller
+    result = await async_w3.manager.coro_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 341, in coro_request
+    return self.formatted_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 287, in formatted_response
+    apply_error_formatters(error_formatters, response)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 104, in apply_error_formatters
+    formatted_resp = pipe(response, error_formatters)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\error_formatters_utils.py", line 165, in raise_contract_logic_error_on_revert
+    raise ContractLogicError("execution reverted", data=data)
+web3.exceptions.ContractLogicError: execution reverted
+
+May-11|17:22:55 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|17:22:55 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 56 seconds before next task...
+May-11|17:24:22 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-11|17:24:22 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Balance of USDT is: 3.094899E-12 and ETH is: 0.003538209356184094
+May-11|17:24:22 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Calculating amount to swap. Please, wait some time.
+May-11|17:24:22 - swap.amount_to_swap - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Getting started to swap: 0.002924330032886152 ETH and 3078242139880161
+May-11|17:24:22 - swap.prepare_data - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - SUCCESS - Call passed successfully
+May-11|17:24:23 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'AttributeError'>: 'AsyncContract' object has no attribute 'logger'|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\utils\utils.py", line 382, in wrapper
+    tx_hash = await func(obj, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Optimistic script\Optisoft\utils\utils.py", line 407, in approve_asset
+    obj.logger.info('Starting approving...')
+    ^^^^^^^^^^
+AttributeError: 'AsyncContract' object has no attribute 'logger'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 64, in run
+    await self.prepare_data(await self.amount_to_swap(await self.check_balance()))
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 102, in prepare_data
+    raise e
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 99, in prepare_data
+    await approve_asset(self.contract, token_in, self.client.address, amount_in)
+  File "d:\Optimistic script\Optisoft\utils\utils.py", line 398, in wrapper
+    obj.logger.error(f'Error! {type(e)}{e}. Trying again...')
+    ^^^^^^^^^^
+AttributeError: 'AsyncContract' object has no attribute 'logger'
+
+May-11|17:24:23 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-11|17:24:23 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 40 seconds before next task...

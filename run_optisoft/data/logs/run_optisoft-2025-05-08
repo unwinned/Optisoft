@@ -1,0 +1,1816 @@
+May-08|11:03:46 - runner.run_task_with_retry - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Task failed with exception: <class 'TypeError'>: unsupported operand type(s) for +: 'float' and 'decimal.Decimal'|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\utils\runner.py", line 200, in run_task_with_retry
+    return await self.run_task(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Optimistic script\Optisoft\run_optisoft\runner.py", line 35, in run_task
+    await self.Router().route(task=task, action=self.action)()
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 83, in unichainbridge
+    await bridge.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\bridge.py", line 28, in run
+    total_value = random_bridge_amount + self.client.w3.from_wei(300000, 'ether')
+                  ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for +: 'float' and 'decimal.Decimal'
+]. Retrying...
+May-08|11:07:48 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - You don't have enought ETH to bridge!
+May-08|11:11:19 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting bridging 0.0009472 ETH 
+May-08|11:11:19 - run_optisoft.dapps.bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! <class 'TypeError'>UnichainBridge.bridge() missing 1 required positional argument: 'send_fee'[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\utils.py", line 21, in wrapper
+    tx_hash = await func(obj, *args,  **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: UnichainBridge.bridge() missing 1 required positional argument: 'send_fee'
+]. Trying again...
+May-08|11:12:53 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting bridging 0.0009301 ETH 
+May-08|11:12:53 - run_optisoft.dapps.bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! <class 'FileNotFoundError'>[Errno 2] No such file or directory: 'd:\\Optimistic script\\Optisoft\\abis\\owlto_bridge_abi.json'[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\utils.py", line 21, in wrapper
+    tx_hash = await func(obj, *args,  **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\bridge.py", line 44, in bridge
+    abi=read_json(UNICHAIN_BRIDGE_ABI))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Optimistic script\Optisoft\utils\utils.py", line 280, in read_json
+    with open(file_path, 'r') as file:
+         ^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'd:\\Optimistic script\\Optisoft\\abis\\owlto_bridge_abi.json'
+]. Trying again...
+May-08|11:14:05 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting bridging 0.0009070 ETH 
+May-08|11:14:05 - run_optisoft.dapps.bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! <class 'FileNotFoundError'>[Errno 2] No such file or directory: 'd:\\Optimistic script\\Optisoft\\abis\\unichain_bridge_abi.json'[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\utils.py", line 21, in wrapper
+    tx_hash = await func(obj, *args,  **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\bridge.py", line 44, in bridge
+    abi=read_json(UNICHAIN_BRIDGE_ABI))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Optimistic script\Optisoft\utils\utils.py", line 280, in read_json
+    with open(file_path, 'r') as file:
+         ^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'd:\\Optimistic script\\Optisoft\\abis\\unichain_bridge_abi.json'
+]. Trying again...
+May-08|11:17:00 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting bridging 0.0009994 ETH 
+May-08|11:17:00 - run_optisoft.dapps.bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! <class 'web3.exceptions.Web3ValidationError'>
+Could not identify the intended function with name `deposit`, positional arguments with type(s) `address,address,address,int,int,int,str` and keyword arguments with type(s) `{}`.
+Found 1 function(s) with the name `deposit`: ['deposit(string,address,address,uint256,uint256,uint256)']
+Function invocation failed due to improper number of arguments.[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\utils.py", line 21, in wrapper
+    tx_hash = await func(obj, *args,  **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\bridge.py", line 45, in bridge
+    transaction = await contract.functions.deposit(self.client.address,
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\async_contract.py", line 262, in __call__
+    clone._set_function_info()
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\base_contract.py", line 473, in _set_function_info
+    self.abi = find_matching_fn_abi(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\contracts.py", line 208, in find_matching_fn_abi
+    raise Web3ValidationError(message)
+web3.exceptions.Web3ValidationError: 
+Could not identify the intended function with name `deposit`, positional arguments with type(s) `address,address,address,int,int,int,str` and keyword arguments with type(s) `{}`.
+Found 1 function(s) with the name `deposit`: ['deposit(string,address,address,uint256,uint256,uint256)']
+Function invocation failed due to improper number of arguments.
+]. Trying again...
+May-08|11:19:22 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting bridging 0.0009877 ETH 
+May-08|11:19:22 - run_optisoft.dapps.bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! <class 'TypeError'>Unsupported type: '<class 'float'>'. Must be one of: bool, str, bytes, bytearray or int.[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\utils.py", line 21, in wrapper
+    tx_hash = await func(obj, *args,  **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\bridge.py", line 45, in bridge
+    transaction = await contract.functions.deposit(str(self.client.address),
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\async_contract.py", line 358, in build_transaction
+    return await async_build_transaction_for_function(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\utils.py", line 440, in async_build_transaction_for_function
+    return await async_fill_transaction_defaults(async_w3, prepared_transaction)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\async_transactions.py", line 145, in async_fill_transaction_defaults
+    default_val = await default_getter(async_w3, transaction)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\async_transactions.py", line 43, in _estimate_gas
+    return await async_w3.eth.estimate_gas(tx)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 325, in estimate_gas
+    return await self._estimate_gas(transaction, block_identifier)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\module.py", line 89, in caller
+    (method_str, params), response_formatters = method.process_params(
+                                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\method.py", line 210, in process_params
+    _apply_request_formatters(params, self.request_formatters(method)),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\functional.py", line 47, in inner
+    return callback(fn(*args, **kwargs))
+                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\method.py", line 55, in _apply_request_formatters
+    formatted_params = pipe(params, request_formatters)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "cytoolz\\functoolz.pyx", line 523, in cytoolz.functoolz.Compose.__call__
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\decorators.py", line 102, in wrapper
+    return ReturnType(result)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\applicators.py", line 36, in apply_formatter_at_index
+    yield formatter(item)
+          ^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\rpc_abi.py", line 237, in apply_abi_formatters_to_dict
+    formatted_values = map_abi_data(
+                       ^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\abi.py", line 741, in map_abi_data
+    return pipe(data, *pipeline)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\abi.py", line 776, in data_tree_map
+    return recursive_map(map_to_typed_data, data_tree)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\decorators.py", line 30, in wrapped
+    wrapped_val = to_wrap(*args)
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 84, in recursive_map
+    items_mapped = map_collection(recurse, data)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 68, in map_collection
+    return datatype(map(func, collection))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 82, in recurse
+    return recursive_map(func, item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\decorators.py", line 30, in wrapped
+    wrapped_val = to_wrap(*args)
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 85, in recursive_map
+    return func(items_mapped)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\abi.py", line 772, in map_to_typed_data
+    return ABITypedData(func(*elements))
+                        ^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 80, in wrapper
+    modified = to_wrap(type_str, data)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 135, in new_normalizer
+    return old_normalizer(abi_type, type_str, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 170, in abi_int_to_hex
+    return type_str, hexstr_if_str(to_hex, data)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\encoding.py", line 178, in hexstr_if_str
+    return to_type(primitive, hexstr=hexstr)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\decorators.py", line 87, in wrapper
+    return to_wrap(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\conversions.py", line 74, in to_hex
+    raise TypeError(
+TypeError: Unsupported type: '<class 'float'>'. Must be one of: bool, str, bytes, bytearray or int.
+]. Trying again...
+May-08|11:22:36 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting bridging 0.0009368 ETH 
+May-08|11:22:46 - run_optisoft.dapps.bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - SUCCESS - Testnet bridge successfull!. HASH - https://optimistic.etherscan.io/tx/0xc4e978fee47b96aaeeeef9e88803f4c0a2dd6c017845d032ef05c07053f3acd1
+May-08|11:29:12 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting bridging 0.0009083 ETH from Optimism to Unichain
+May-08|11:29:13 - bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Bridge failed: type object 'TxStatusResponse' has no attribute 'SUCCESS'
+May-08|11:29:13 - run_optisoft.dapps.bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! <class 'AttributeError'>type object 'TxStatusResponse' has no attribute 'FAILURE'[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\bridge.py", line 84, in bridge
+    return TxStatusResponse.SUCCESS, tx_hash.hex()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'TxStatusResponse' has no attribute 'SUCCESS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\utils.py", line 21, in wrapper
+    tx_hash = await func(obj, *args,  **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\bridge.py", line 87, in bridge
+    return TxStatusResponse.FAILURE, None
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'TxStatusResponse' has no attribute 'FAILURE'
+]. Trying again...
+May-08|11:31:39 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting bridging 0.0009077 ETH from Optimism to Unichain
+May-08|11:31:49 - run_optisoft.dapps.bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! <class 'TypeError'>expected a bool, int, byte or bytearray in first arg, or keyword of hexstr or text[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\utils.py", line 24, in wrapper
+    receipts = await obj.client.w3.eth.get_transaction_receipt(tx_hash)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 510, in get_transaction_receipt
+    return await self._transaction_receipt(transaction_hash)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\module.py", line 89, in caller
+    (method_str, params), response_formatters = method.process_params(
+                                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\method.py", line 210, in process_params
+    _apply_request_formatters(params, self.request_formatters(method)),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\functional.py", line 47, in inner
+    return callback(fn(*args, **kwargs))
+                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\method.py", line 55, in _apply_request_formatters
+    formatted_params = pipe(params, request_formatters)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\abi.py", line 741, in map_abi_data
+    return pipe(data, *pipeline)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\abi.py", line 776, in data_tree_map
+    return recursive_map(map_to_typed_data, data_tree)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\decorators.py", line 30, in wrapped
+    wrapped_val = to_wrap(*args)
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 84, in recursive_map
+    items_mapped = map_collection(recurse, data)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 68, in map_collection
+    return datatype(map(func, collection))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 82, in recurse
+    return recursive_map(func, item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\decorators.py", line 30, in wrapped
+    wrapped_val = to_wrap(*args)
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 85, in recursive_map
+    return func(items_mapped)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\abi.py", line 772, in map_to_typed_data
+    return ABITypedData(func(*elements))
+                        ^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 80, in wrapper
+    modified = to_wrap(type_str, data)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 135, in new_normalizer
+    return old_normalizer(abi_type, type_str, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 148, in abi_bytes_to_hex
+    bytes_data = hexstr_if_str(to_bytes, data)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\encoding.py", line 178, in hexstr_if_str
+    return to_type(primitive, hexstr=hexstr)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\decorators.py", line 87, in wrapper
+    return to_wrap(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\conversions.py", line 137, in to_bytes
+    raise TypeError(
+TypeError: expected a bool, int, byte or bytearray in first arg, or keyword of hexstr or text
+]. Trying again...
+May-08|11:35:21 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting bridging 0.0009185 ETH from Optimism to Unichain
+May-08|11:35:31 - run_optisoft.dapps.bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! <class 'TypeError'>expected a bool, int, byte or bytearray in first arg, or keyword of hexstr or text[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\utils.py", line 24, in wrapper
+    receipts = await obj.client.w3.eth.get_transaction_receipt(tx_hash)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 510, in get_transaction_receipt
+    return await self._transaction_receipt(transaction_hash)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\module.py", line 89, in caller
+    (method_str, params), response_formatters = method.process_params(
+                                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\method.py", line 210, in process_params
+    _apply_request_formatters(params, self.request_formatters(method)),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\functional.py", line 47, in inner
+    return callback(fn(*args, **kwargs))
+                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\method.py", line 55, in _apply_request_formatters
+    formatted_params = pipe(params, request_formatters)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\abi.py", line 741, in map_abi_data
+    return pipe(data, *pipeline)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\abi.py", line 776, in data_tree_map
+    return recursive_map(map_to_typed_data, data_tree)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\decorators.py", line 30, in wrapped
+    wrapped_val = to_wrap(*args)
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 84, in recursive_map
+    items_mapped = map_collection(recurse, data)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 68, in map_collection
+    return datatype(map(func, collection))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 82, in recurse
+    return recursive_map(func, item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\decorators.py", line 30, in wrapped
+    wrapped_val = to_wrap(*args)
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 85, in recursive_map
+    return func(items_mapped)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\abi.py", line 772, in map_to_typed_data
+    return ABITypedData(func(*elements))
+                        ^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 80, in wrapper
+    modified = to_wrap(type_str, data)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 135, in new_normalizer
+    return old_normalizer(abi_type, type_str, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 148, in abi_bytes_to_hex
+    bytes_data = hexstr_if_str(to_bytes, data)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\encoding.py", line 178, in hexstr_if_str
+    return to_type(primitive, hexstr=hexstr)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\decorators.py", line 87, in wrapper
+    return to_wrap(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\conversions.py", line 137, in to_bytes
+    raise TypeError(
+TypeError: expected a bool, int, byte or bytearray in first arg, or keyword of hexstr or text
+]. Trying again...
+May-08|11:43:27 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting bridging 0.0009763 ETH from Optimism to Unichain
+May-08|11:43:38 - run_optisoft.dapps.bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! <class 'TypeError'>expected a bool, int, byte or bytearray in first arg, or keyword of hexstr or text[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\utils.py", line 24, in wrapper
+    receipts = await obj.client.w3.eth.get_transaction_receipt(tx_hash)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 510, in get_transaction_receipt
+    return await self._transaction_receipt(transaction_hash)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\module.py", line 89, in caller
+    (method_str, params), response_formatters = method.process_params(
+                                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\method.py", line 210, in process_params
+    _apply_request_formatters(params, self.request_formatters(method)),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\functional.py", line 47, in inner
+    return callback(fn(*args, **kwargs))
+                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\method.py", line 55, in _apply_request_formatters
+    formatted_params = pipe(params, request_formatters)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\abi.py", line 741, in map_abi_data
+    return pipe(data, *pipeline)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\abi.py", line 776, in data_tree_map
+    return recursive_map(map_to_typed_data, data_tree)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\decorators.py", line 30, in wrapped
+    wrapped_val = to_wrap(*args)
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 84, in recursive_map
+    items_mapped = map_collection(recurse, data)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 68, in map_collection
+    return datatype(map(func, collection))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 82, in recurse
+    return recursive_map(func, item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\decorators.py", line 30, in wrapped
+    wrapped_val = to_wrap(*args)
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 85, in recursive_map
+    return func(items_mapped)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\abi.py", line 772, in map_to_typed_data
+    return ABITypedData(func(*elements))
+                        ^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 80, in wrapper
+    modified = to_wrap(type_str, data)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 135, in new_normalizer
+    return old_normalizer(abi_type, type_str, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 148, in abi_bytes_to_hex
+    bytes_data = hexstr_if_str(to_bytes, data)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\encoding.py", line 178, in hexstr_if_str
+    return to_type(primitive, hexstr=hexstr)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\decorators.py", line 87, in wrapper
+    return to_wrap(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\conversions.py", line 137, in to_bytes
+    raise TypeError(
+TypeError: expected a bool, int, byte or bytearray in first arg, or keyword of hexstr or text
+]. Trying again...
+May-08|11:46:30 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting bridging 0.0009850 ETH from Optimism to Unichain
+May-08|11:46:40 - run_optisoft.dapps.bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! <class 'TypeError'>expected a bool, int, byte or bytearray in first arg, or keyword of hexstr or text[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\utils.py", line 24, in wrapper
+    receipts = await obj.client.w3.eth.get_transaction_receipt(tx_hash)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 510, in get_transaction_receipt
+    return await self._transaction_receipt(transaction_hash)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\module.py", line 89, in caller
+    (method_str, params), response_formatters = method.process_params(
+                                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\method.py", line 210, in process_params
+    _apply_request_formatters(params, self.request_formatters(method)),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\functional.py", line 47, in inner
+    return callback(fn(*args, **kwargs))
+                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\method.py", line 55, in _apply_request_formatters
+    formatted_params = pipe(params, request_formatters)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\abi.py", line 741, in map_abi_data
+    return pipe(data, *pipeline)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\abi.py", line 776, in data_tree_map
+    return recursive_map(map_to_typed_data, data_tree)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\decorators.py", line 30, in wrapped
+    wrapped_val = to_wrap(*args)
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 84, in recursive_map
+    items_mapped = map_collection(recurse, data)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 68, in map_collection
+    return datatype(map(func, collection))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 82, in recurse
+    return recursive_map(func, item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\decorators.py", line 30, in wrapped
+    wrapped_val = to_wrap(*args)
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 85, in recursive_map
+    return func(items_mapped)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\abi.py", line 772, in map_to_typed_data
+    return ABITypedData(func(*elements))
+                        ^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 80, in wrapper
+    modified = to_wrap(type_str, data)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 135, in new_normalizer
+    return old_normalizer(abi_type, type_str, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 148, in abi_bytes_to_hex
+    bytes_data = hexstr_if_str(to_bytes, data)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\encoding.py", line 178, in hexstr_if_str
+    return to_type(primitive, hexstr=hexstr)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\decorators.py", line 87, in wrapper
+    return to_wrap(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\conversions.py", line 137, in to_bytes
+    raise TypeError(
+TypeError: expected a bool, int, byte or bytearray in first arg, or keyword of hexstr or text
+]. Trying again...
+May-08|11:52:11 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting bridging 0.0009887 ETH from Optimism to Unichain
+May-08|11:52:19 - run_optisoft.dapps.bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! <class 'TypeError'>expected a bool, int, byte or bytearray in first arg, or keyword of hexstr or text[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\utils.py", line 24, in wrapper
+    receipts = await obj.client.w3.eth.get_transaction_receipt(tx_hash)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 510, in get_transaction_receipt
+    return await self._transaction_receipt(transaction_hash)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\module.py", line 89, in caller
+    (method_str, params), response_formatters = method.process_params(
+                                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\method.py", line 210, in process_params
+    _apply_request_formatters(params, self.request_formatters(method)),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\functional.py", line 47, in inner
+    return callback(fn(*args, **kwargs))
+                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\method.py", line 55, in _apply_request_formatters
+    formatted_params = pipe(params, request_formatters)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\abi.py", line 741, in map_abi_data
+    return pipe(data, *pipeline)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\abi.py", line 776, in data_tree_map
+    return recursive_map(map_to_typed_data, data_tree)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\decorators.py", line 30, in wrapped
+    wrapped_val = to_wrap(*args)
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 84, in recursive_map
+    items_mapped = map_collection(recurse, data)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 68, in map_collection
+    return datatype(map(func, collection))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 82, in recurse
+    return recursive_map(func, item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\decorators.py", line 30, in wrapped
+    wrapped_val = to_wrap(*args)
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 85, in recursive_map
+    return func(items_mapped)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\abi.py", line 772, in map_to_typed_data
+    return ABITypedData(func(*elements))
+                        ^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 80, in wrapper
+    modified = to_wrap(type_str, data)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 135, in new_normalizer
+    return old_normalizer(abi_type, type_str, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 148, in abi_bytes_to_hex
+    bytes_data = hexstr_if_str(to_bytes, data)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\encoding.py", line 178, in hexstr_if_str
+    return to_type(primitive, hexstr=hexstr)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\decorators.py", line 87, in wrapper
+    return to_wrap(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\conversions.py", line 137, in to_bytes
+    raise TypeError(
+TypeError: expected a bool, int, byte or bytearray in first arg, or keyword of hexstr or text
+]. Trying again...
+May-08|11:54:21 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting bridging 0.0009984 ETH 
+May-08|11:54:30 - run_optisoft.dapps.bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - SUCCESS - Testnet bridge successfull!. HASH - https://optimistic.etherscan.io/tx/0x8619802c25c7012cbdb559aa5118b2ee0db04281c51b4083e2dba118e7089160
+May-08|11:56:51 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting bridging 0.0009112 ETH 
+May-08|11:57:03 - run_optisoft.dapps.bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - SUCCESS - Testnet bridge successfull!. HASH - https://optimistic.etherscan.io/tx/0xd7fb2af442b932756239e353c9c624a0cd0dc78777d1d5d08a9ab051c5b917a6
+May-08|11:58:10 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting bridging 0.0009924 ETH 
+May-08|11:58:11 - run_optisoft.dapps.bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! <class 'web3.exceptions.ContractLogicError'>execution reverted: SafeERC20: low-level call failed[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\utils.py", line 21, in wrapper
+    tx_hash = await func(obj, *args,  **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\bridge.py", line 45, in bridge
+    transaction = await contract.functions.deposit("0xE0F6307e051E6994034792e3aD7550DcA667AEcd",
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\async_contract.py", line 358, in build_transaction
+    return await async_build_transaction_for_function(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\utils.py", line 440, in async_build_transaction_for_function
+    return await async_fill_transaction_defaults(async_w3, prepared_transaction)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\async_transactions.py", line 145, in async_fill_transaction_defaults
+    default_val = await default_getter(async_w3, transaction)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\async_transactions.py", line 43, in _estimate_gas
+    return await async_w3.eth.estimate_gas(tx)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 325, in estimate_gas
+    return await self._estimate_gas(transaction, block_identifier)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\module.py", line 118, in caller
+    result = await async_w3.manager.coro_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 341, in coro_request
+    return self.formatted_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 287, in formatted_response
+    apply_error_formatters(error_formatters, response)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 104, in apply_error_formatters
+    formatted_resp = pipe(response, error_formatters)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\error_formatters_utils.py", line 162, in raise_contract_logic_error_on_revert
+    raise ContractLogicError(message, data=data)
+web3.exceptions.ContractLogicError: execution reverted: SafeERC20: low-level call failed
+]. Trying again...
+May-08|11:59:16 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting bridging 0.0009527 ETH 
+May-08|11:59:16 - run_optisoft.dapps.bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! <class 'AttributeError'>'AsyncEth' object has no attribute 'to_checksum_address'[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\utils.py", line 21, in wrapper
+    tx_hash = await func(obj, *args,  **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\bridge.py", line 46, in bridge
+    self.client.w3.eth.to_checksum_address('0x4200000000000000000000000000000000000006'),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AsyncEth' object has no attribute 'to_checksum_address'
+]. Trying again...
+May-08|12:00:25 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting bridging 0.0009520 ETH 
+May-08|12:00:26 - run_optisoft.dapps.bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! <class 'web3.exceptions.ContractLogicError'>execution reverted[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\utils.py", line 21, in wrapper
+    tx_hash = await func(obj, *args,  **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\bridge.py", line 45, in bridge
+    transaction = await contract.functions.deposit("0xE0F6307e051E6994034792e3aD7550DcA667AEcd",
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\async_contract.py", line 358, in build_transaction
+    return await async_build_transaction_for_function(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\utils.py", line 440, in async_build_transaction_for_function
+    return await async_fill_transaction_defaults(async_w3, prepared_transaction)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\async_transactions.py", line 145, in async_fill_transaction_defaults
+    default_val = await default_getter(async_w3, transaction)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\async_transactions.py", line 43, in _estimate_gas
+    return await async_w3.eth.estimate_gas(tx)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 325, in estimate_gas
+    return await self._estimate_gas(transaction, block_identifier)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\module.py", line 118, in caller
+    result = await async_w3.manager.coro_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 341, in coro_request
+    return self.formatted_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 287, in formatted_response
+    apply_error_formatters(error_formatters, response)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 104, in apply_error_formatters
+    formatted_resp = pipe(response, error_formatters)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\error_formatters_utils.py", line 162, in raise_contract_logic_error_on_revert
+    raise ContractLogicError(message, data=data)
+web3.exceptions.ContractLogicError: execution reverted
+]. Trying again...
+May-08|12:01:26 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting bridging 0.0009869 ETH 
+May-08|12:01:26 - run_optisoft.dapps.bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! <class 'AttributeError'>'Client' object has no attribute 'to_checksum_address'[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\utils.py", line 21, in wrapper
+    tx_hash = await func(obj, *args,  **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\bridge.py", line 45, in bridge
+    transaction = await contract.functions.deposit(self.client.to_checksum_address("0xE0F6307e051E6994034792e3aD7550DcA667AEcd"),
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Client' object has no attribute 'to_checksum_address'
+]. Trying again...
+May-08|12:01:58 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting bridging 0.0009906 ETH 
+May-08|12:02:03 - run_optisoft.dapps.bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! <class 'web3.exceptions.ContractLogicError'>execution reverted: SafeERC20: low-level call failed[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\utils.py", line 21, in wrapper
+    tx_hash = await func(obj, *args,  **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\bridge.py", line 45, in bridge
+    transaction = await contract.functions.deposit(self.client.w3.to_checksum_address("0xE0F6307e051E6994034792e3aD7550DcA667AEcd"),
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\async_contract.py", line 358, in build_transaction
+    return await async_build_transaction_for_function(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\utils.py", line 440, in async_build_transaction_for_function
+    return await async_fill_transaction_defaults(async_w3, prepared_transaction)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\async_transactions.py", line 145, in async_fill_transaction_defaults
+    default_val = await default_getter(async_w3, transaction)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\async_transactions.py", line 43, in _estimate_gas
+    return await async_w3.eth.estimate_gas(tx)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 325, in estimate_gas
+    return await self._estimate_gas(transaction, block_identifier)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\module.py", line 118, in caller
+    result = await async_w3.manager.coro_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 341, in coro_request
+    return self.formatted_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 287, in formatted_response
+    apply_error_formatters(error_formatters, response)
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 104, in apply_error_formatters
+    formatted_resp = pipe(response, error_formatters)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\error_formatters_utils.py", line 162, in raise_contract_logic_error_on_revert
+    raise ContractLogicError(message, data=data)
+web3.exceptions.ContractLogicError: execution reverted: SafeERC20: low-level call failed
+]. Trying again...
+May-08|12:03:46 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting bridging 0.0009782 ETH from Optimism to Unichain
+May-08|12:03:47 - bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Bridge failed: 0x4ff64a9f
+May-08|12:03:54 - run_optisoft.dapps.bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! <class 'TypeError'>expected a bool, int, byte or bytearray in first arg, or keyword of hexstr or text[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\utils.py", line 24, in wrapper
+    receipts = await obj.client.w3.eth.get_transaction_receipt(tx_hash)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 510, in get_transaction_receipt
+    return await self._transaction_receipt(transaction_hash)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\module.py", line 89, in caller
+    (method_str, params), response_formatters = method.process_params(
+                                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\method.py", line 210, in process_params
+    _apply_request_formatters(params, self.request_formatters(method)),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\functional.py", line 47, in inner
+    return callback(fn(*args, **kwargs))
+                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\method.py", line 55, in _apply_request_formatters
+    formatted_params = pipe(params, request_formatters)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\abi.py", line 741, in map_abi_data
+    return pipe(data, *pipeline)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\abi.py", line 776, in data_tree_map
+    return recursive_map(map_to_typed_data, data_tree)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\decorators.py", line 30, in wrapped
+    wrapped_val = to_wrap(*args)
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 84, in recursive_map
+    items_mapped = map_collection(recurse, data)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 68, in map_collection
+    return datatype(map(func, collection))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 82, in recurse
+    return recursive_map(func, item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\decorators.py", line 30, in wrapped
+    wrapped_val = to_wrap(*args)
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 85, in recursive_map
+    return func(items_mapped)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\abi.py", line 772, in map_to_typed_data
+    return ABITypedData(func(*elements))
+                        ^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 80, in wrapper
+    modified = to_wrap(type_str, data)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 135, in new_normalizer
+    return old_normalizer(abi_type, type_str, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 148, in abi_bytes_to_hex
+    bytes_data = hexstr_if_str(to_bytes, data)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\encoding.py", line 178, in hexstr_if_str
+    return to_type(primitive, hexstr=hexstr)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\decorators.py", line 87, in wrapper
+    return to_wrap(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\conversions.py", line 137, in to_bytes
+    raise TypeError(
+TypeError: expected a bool, int, byte or bytearray in first arg, or keyword of hexstr or text
+]. Trying again...
+May-08|12:04:35 - run_optisoft.dapps.bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! <class 'TypeError'>expected a bool, int, byte or bytearray in first arg, or keyword of hexstr or text[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\utils.py", line 24, in wrapper
+    receipts = await obj.client.w3.eth.get_transaction_receipt(tx_hash)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 510, in get_transaction_receipt
+    return await self._transaction_receipt(transaction_hash)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\module.py", line 89, in caller
+    (method_str, params), response_formatters = method.process_params(
+                                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\method.py", line 210, in process_params
+    _apply_request_formatters(params, self.request_formatters(method)),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\functional.py", line 47, in inner
+    return callback(fn(*args, **kwargs))
+                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\method.py", line 55, in _apply_request_formatters
+    formatted_params = pipe(params, request_formatters)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\abi.py", line 741, in map_abi_data
+    return pipe(data, *pipeline)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\abi.py", line 776, in data_tree_map
+    return recursive_map(map_to_typed_data, data_tree)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\decorators.py", line 30, in wrapped
+    wrapped_val = to_wrap(*args)
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 84, in recursive_map
+    items_mapped = map_collection(recurse, data)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 68, in map_collection
+    return datatype(map(func, collection))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 82, in recurse
+    return recursive_map(func, item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\decorators.py", line 30, in wrapped
+    wrapped_val = to_wrap(*args)
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 85, in recursive_map
+    return func(items_mapped)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\abi.py", line 772, in map_to_typed_data
+    return ABITypedData(func(*elements))
+                        ^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 80, in wrapper
+    modified = to_wrap(type_str, data)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 135, in new_normalizer
+    return old_normalizer(abi_type, type_str, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 148, in abi_bytes_to_hex
+    bytes_data = hexstr_if_str(to_bytes, data)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\encoding.py", line 178, in hexstr_if_str
+    return to_type(primitive, hexstr=hexstr)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\decorators.py", line 87, in wrapper
+    return to_wrap(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\conversions.py", line 137, in to_bytes
+    raise TypeError(
+TypeError: expected a bool, int, byte or bytearray in first arg, or keyword of hexstr or text
+]. Trying again...
+May-08|12:05:01 - run_optisoft.dapps.bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! <class 'TypeError'>expected a bool, int, byte or bytearray in first arg, or keyword of hexstr or text[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\utils.py", line 24, in wrapper
+    receipts = await obj.client.w3.eth.get_transaction_receipt(tx_hash)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 510, in get_transaction_receipt
+    return await self._transaction_receipt(transaction_hash)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\module.py", line 89, in caller
+    (method_str, params), response_formatters = method.process_params(
+                                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\method.py", line 210, in process_params
+    _apply_request_formatters(params, self.request_formatters(method)),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\functional.py", line 47, in inner
+    return callback(fn(*args, **kwargs))
+                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\method.py", line 55, in _apply_request_formatters
+    formatted_params = pipe(params, request_formatters)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\abi.py", line 741, in map_abi_data
+    return pipe(data, *pipeline)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\abi.py", line 776, in data_tree_map
+    return recursive_map(map_to_typed_data, data_tree)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\decorators.py", line 30, in wrapped
+    wrapped_val = to_wrap(*args)
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 84, in recursive_map
+    items_mapped = map_collection(recurse, data)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 68, in map_collection
+    return datatype(map(func, collection))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 82, in recurse
+    return recursive_map(func, item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\decorators.py", line 30, in wrapped
+    wrapped_val = to_wrap(*args)
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 85, in recursive_map
+    return func(items_mapped)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\abi.py", line 772, in map_to_typed_data
+    return ABITypedData(func(*elements))
+                        ^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 80, in wrapper
+    modified = to_wrap(type_str, data)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 135, in new_normalizer
+    return old_normalizer(abi_type, type_str, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 148, in abi_bytes_to_hex
+    bytes_data = hexstr_if_str(to_bytes, data)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\encoding.py", line 178, in hexstr_if_str
+    return to_type(primitive, hexstr=hexstr)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\decorators.py", line 87, in wrapper
+    return to_wrap(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\conversions.py", line 137, in to_bytes
+    raise TypeError(
+TypeError: expected a bool, int, byte or bytearray in first arg, or keyword of hexstr or text
+]. Trying again...
+May-08|12:05:31 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting bridging 0.0009477 ETH from Optimism to Unichain
+May-08|12:05:32 - bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Bridge failed due to contract revert: 0x4ff64a9f
+May-08|12:05:40 - run_optisoft.dapps.bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! <class 'TypeError'>expected a bool, int, byte or bytearray in first arg, or keyword of hexstr or text[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\utils.py", line 24, in wrapper
+    receipts = await obj.client.w3.eth.get_transaction_receipt(tx_hash)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 510, in get_transaction_receipt
+    return await self._transaction_receipt(transaction_hash)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\module.py", line 89, in caller
+    (method_str, params), response_formatters = method.process_params(
+                                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\method.py", line 210, in process_params
+    _apply_request_formatters(params, self.request_formatters(method)),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\functional.py", line 47, in inner
+    return callback(fn(*args, **kwargs))
+                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\method.py", line 55, in _apply_request_formatters
+    formatted_params = pipe(params, request_formatters)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\abi.py", line 741, in map_abi_data
+    return pipe(data, *pipeline)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\abi.py", line 776, in data_tree_map
+    return recursive_map(map_to_typed_data, data_tree)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\decorators.py", line 30, in wrapped
+    wrapped_val = to_wrap(*args)
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 84, in recursive_map
+    items_mapped = map_collection(recurse, data)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 68, in map_collection
+    return datatype(map(func, collection))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 82, in recurse
+    return recursive_map(func, item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\decorators.py", line 30, in wrapped
+    wrapped_val = to_wrap(*args)
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 85, in recursive_map
+    return func(items_mapped)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\abi.py", line 772, in map_to_typed_data
+    return ABITypedData(func(*elements))
+                        ^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 80, in wrapper
+    modified = to_wrap(type_str, data)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 135, in new_normalizer
+    return old_normalizer(abi_type, type_str, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 148, in abi_bytes_to_hex
+    bytes_data = hexstr_if_str(to_bytes, data)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\encoding.py", line 178, in hexstr_if_str
+    return to_type(primitive, hexstr=hexstr)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\decorators.py", line 87, in wrapper
+    return to_wrap(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\conversions.py", line 137, in to_bytes
+    raise TypeError(
+TypeError: expected a bool, int, byte or bytearray in first arg, or keyword of hexstr or text
+]. Trying again...
+May-08|12:10:34 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Bridge amount 0.0009516 ETH is below minimum 0.0010000 ETH
+May-08|12:11:27 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting bridging 0.0010000 ETH from Optimism to Unichain
+May-08|12:11:29 - bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Bridge failed due to contract revert: 0x4ff64a9f
+May-08|12:11:38 - run_optisoft.dapps.bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! <class 'TypeError'>expected a bool, int, byte or bytearray in first arg, or keyword of hexstr or text[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\utils.py", line 24, in wrapper
+    receipts = await obj.client.w3.eth.get_transaction_receipt(tx_hash)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 510, in get_transaction_receipt
+    return await self._transaction_receipt(transaction_hash)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\module.py", line 89, in caller
+    (method_str, params), response_formatters = method.process_params(
+                                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\method.py", line 210, in process_params
+    _apply_request_formatters(params, self.request_formatters(method)),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\functional.py", line 47, in inner
+    return callback(fn(*args, **kwargs))
+                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\method.py", line 55, in _apply_request_formatters
+    formatted_params = pipe(params, request_formatters)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\abi.py", line 741, in map_abi_data
+    return pipe(data, *pipeline)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\abi.py", line 776, in data_tree_map
+    return recursive_map(map_to_typed_data, data_tree)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\decorators.py", line 30, in wrapped
+    wrapped_val = to_wrap(*args)
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 84, in recursive_map
+    items_mapped = map_collection(recurse, data)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 68, in map_collection
+    return datatype(map(func, collection))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 82, in recurse
+    return recursive_map(func, item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\decorators.py", line 30, in wrapped
+    wrapped_val = to_wrap(*args)
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 85, in recursive_map
+    return func(items_mapped)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\abi.py", line 772, in map_to_typed_data
+    return ABITypedData(func(*elements))
+                        ^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 80, in wrapper
+    modified = to_wrap(type_str, data)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 135, in new_normalizer
+    return old_normalizer(abi_type, type_str, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 148, in abi_bytes_to_hex
+    bytes_data = hexstr_if_str(to_bytes, data)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\encoding.py", line 178, in hexstr_if_str
+    return to_type(primitive, hexstr=hexstr)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\decorators.py", line 87, in wrapper
+    return to_wrap(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\conversions.py", line 137, in to_bytes
+    raise TypeError(
+TypeError: expected a bool, int, byte or bytearray in first arg, or keyword of hexstr or text
+]. Trying again...
+May-08|12:12:10 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting bridging 0.0010280 ETH from Optimism to Unichain
+May-08|12:12:10 - bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Bridge failed due to contract revert: 0x4ff64a9f
+May-08|12:12:17 - run_optisoft.dapps.bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! <class 'TypeError'>expected a bool, int, byte or bytearray in first arg, or keyword of hexstr or text[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\utils.py", line 24, in wrapper
+    receipts = await obj.client.w3.eth.get_transaction_receipt(tx_hash)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 510, in get_transaction_receipt
+    return await self._transaction_receipt(transaction_hash)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\module.py", line 89, in caller
+    (method_str, params), response_formatters = method.process_params(
+                                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\method.py", line 210, in process_params
+    _apply_request_formatters(params, self.request_formatters(method)),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\functional.py", line 47, in inner
+    return callback(fn(*args, **kwargs))
+                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\method.py", line 55, in _apply_request_formatters
+    formatted_params = pipe(params, request_formatters)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\abi.py", line 741, in map_abi_data
+    return pipe(data, *pipeline)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\abi.py", line 776, in data_tree_map
+    return recursive_map(map_to_typed_data, data_tree)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\decorators.py", line 30, in wrapped
+    wrapped_val = to_wrap(*args)
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 84, in recursive_map
+    items_mapped = map_collection(recurse, data)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 68, in map_collection
+    return datatype(map(func, collection))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 82, in recurse
+    return recursive_map(func, item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\decorators.py", line 30, in wrapped
+    wrapped_val = to_wrap(*args)
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 85, in recursive_map
+    return func(items_mapped)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\abi.py", line 772, in map_to_typed_data
+    return ABITypedData(func(*elements))
+                        ^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 80, in wrapper
+    modified = to_wrap(type_str, data)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 135, in new_normalizer
+    return old_normalizer(abi_type, type_str, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 148, in abi_bytes_to_hex
+    bytes_data = hexstr_if_str(to_bytes, data)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\encoding.py", line 178, in hexstr_if_str
+    return to_type(primitive, hexstr=hexstr)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\decorators.py", line 87, in wrapper
+    return to_wrap(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\conversions.py", line 137, in to_bytes
+    raise TypeError(
+TypeError: expected a bool, int, byte or bytearray in first arg, or keyword of hexstr or text
+]. Trying again...
+May-08|12:16:18 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting bridging 0.0010415 ETH from Optimism to Unichain
+May-08|12:16:18 - bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Bridge failed due to contract revert: 0x4ff64a9f
+May-08|12:19:24 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting bridging 0.0010216 ETH from Optimism to Unichain
+May-08|12:19:25 - bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Bridge failed due to contract revert: 0x4ff64a9f
+May-08|12:26:13 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting bridging 0.0020095 ETH from Optimism to Unichain
+May-08|12:26:14 - bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Bridge failed due to contract revert: 0x4ff64a9f
+May-08|12:26:22 - run_optisoft.dapps.bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! <class 'TypeError'>expected a bool, int, byte or bytearray in first arg, or keyword of hexstr or text[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\utils.py", line 24, in wrapper
+    receipts = await obj.client.w3.eth.get_transaction_receipt(tx_hash)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 510, in get_transaction_receipt
+    return await self._transaction_receipt(transaction_hash)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\module.py", line 89, in caller
+    (method_str, params), response_formatters = method.process_params(
+                                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\method.py", line 210, in process_params
+    _apply_request_formatters(params, self.request_formatters(method)),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\functional.py", line 47, in inner
+    return callback(fn(*args, **kwargs))
+                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\method.py", line 55, in _apply_request_formatters
+    formatted_params = pipe(params, request_formatters)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\abi.py", line 741, in map_abi_data
+    return pipe(data, *pipeline)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz\\functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\abi.py", line 776, in data_tree_map
+    return recursive_map(map_to_typed_data, data_tree)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\decorators.py", line 30, in wrapped
+    wrapped_val = to_wrap(*args)
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 84, in recursive_map
+    items_mapped = map_collection(recurse, data)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 68, in map_collection
+    return datatype(map(func, collection))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 82, in recurse
+    return recursive_map(func, item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\decorators.py", line 30, in wrapped
+    wrapped_val = to_wrap(*args)
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\formatters.py", line 85, in recursive_map
+    return func(items_mapped)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\abi.py", line 772, in map_to_typed_data
+    return ABITypedData(func(*elements))
+                        ^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 80, in wrapper
+    modified = to_wrap(type_str, data)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 135, in new_normalizer
+    return old_normalizer(abi_type, type_str, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 148, in abi_bytes_to_hex
+    bytes_data = hexstr_if_str(to_bytes, data)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cytoolz\\functoolz.pyx", line 272, in cytoolz.functoolz.curry.__call__
+  File "cytoolz\\functoolz.pyx", line 268, in cytoolz.functoolz.curry.__call__
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\encoding.py", line 178, in hexstr_if_str
+    return to_type(primitive, hexstr=hexstr)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\decorators.py", line 87, in wrapper
+    return to_wrap(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\conversions.py", line 137, in to_bytes
+    raise TypeError(
+TypeError: expected a bool, int, byte or bytearray in first arg, or keyword of hexstr or text
+]. Trying again...
+May-08|12:45:53 - runner.run_task_with_retry - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Task failed with exception: <class 'ValueError'>: Could not format invalid value 'd:\\Optimistic script\\Optisoft\\run_optisoft\\data\\abis\\unichain_bridge_abi.json' as field 'abi'|[Traceback (most recent call last):
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\applicators.py", line 97, in apply_formatters_to_dict
+    yield key, formatters[key](item)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\normalizers.py", line 253, in normalize_abi
+    abi = json.loads(abi)
+          ^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\utils\runner.py", line 200, in run_task_with_retry
+    return await self.run_task(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Optimistic script\Optisoft\run_optisoft\runner.py", line 35, in run_task
+    await self.Router().route(task=task, action=self.action)()
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 77, in unichainbridge
+    bridge = UnichainBridge(
+             ^^^^^^^^^^^^^^^
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\bridge.py", line 17, in __init__
+    self.contract = self.client.w3.eth.contract(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 753, in contract
+    ContractFactory = ContractFactoryClass.factory(self.w3, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\contract\async_contract.py", line 488, in factory
+    PropertyCheckingFactory(
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\datatypes.py", line 54, in __new__
+    processed_namespace = apply_formatters_to_dict(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\functional.py", line 47, in inner
+    return callback(fn(*args, **kwargs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\eth_utils\applicators.py", line 102, in apply_formatters_to_dict
+    raise ValueError(new_error_message) from exc
+ValueError: Could not format invalid value 'd:\\Optimistic script\\Optisoft\\run_optisoft\\data\\abis\\unichain_bridge_abi.json' as field 'abi'
+]. Retrying...
+May-08|12:47:09 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Preparing to bridge 0.0020916 ETH...
+May-08|12:47:09 - bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Bridge failed: 'UnichainBridge' object has no attribute 'w3'
+May-08|12:47:09 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Bridge failed!
+May-08|12:47:09 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - SUCCESS - Bridge successfull: https://optimistic.etherscan.io/tx/None
+May-08|12:48:11 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Preparing to bridge 0.0020784 ETH...
+May-08|12:48:11 - bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Bridge failed: expected a bool, int, byte or bytearray in first arg, or keyword of hexstr or text
+May-08|12:48:11 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Bridge failed!
+May-08|12:48:11 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - SUCCESS - Bridge successfull: https://optimistic.etherscan.io/tx/None
+May-08|12:50:15 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Preparing to bridge 0.0020001 ETH...
+May-08|12:50:15 - bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Bridge failed: expected a bool, int, byte or bytearray in first arg, or keyword of hexstr or text
+May-08|12:50:15 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Bridge failed!
+May-08|12:50:15 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - SUCCESS - Bridge successfull: https://optimistic.etherscan.io/tx/None
+May-08|12:52:08 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Preparing to bridge 0.0020281 ETH...
+May-08|12:52:08 - bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Bridge failed: expected a bool, int, byte or bytearray in first arg, or keyword of hexstr or text
+May-08|12:52:08 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Bridge failed!
+May-08|12:52:08 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - SUCCESS - Bridge successfull: https://optimistic.etherscan.io/tx/None
+May-08|12:52:51 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Preparing to bridge 0.0020576 ETH...
+May-08|12:52:51 - bridge.quote_send_fee - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Failed to quote send fee: 0xf6ff4fb70000000000000000000000000000000000000000000000000000000000000082
+May-08|12:52:51 - bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Bridge failed: 0xf6ff4fb70000000000000000000000000000000000000000000000000000000000000082
+May-08|12:52:51 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Bridge failed!
+May-08|12:52:51 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - SUCCESS - Bridge successfull: https://optimistic.etherscan.io/tx/None
+May-08|12:56:31 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Preparing to bridge 0.0020062 ETH...
+May-08|12:56:31 - bridge.check_path - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Path to dstEid 130 exists with credit: 0
+May-08|12:56:31 - bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Invalid dstEid 130: No path configured!
+May-08|12:56:31 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Bridge failed!
+May-08|12:58:33 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Preparing to bridge 0.0020344 ETH...
+May-08|12:58:33 - bridge.quote_send_fee - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Failed to quote send fee: 0xf6ff4fb70000000000000000000000000000000000000000000000000000000000000082
+May-08|12:58:33 - bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Bridge failed: 0xf6ff4fb70000000000000000000000000000000000000000000000000000000000000082
+May-08|12:58:33 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Bridge failed!
+May-08|13:03:08 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Preparing to bridge 0.0020342 ETH...
+May-08|13:03:09 - bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Bridging 0.0020342 ETH from Optimism to Unichain...
+May-08|13:03:10 - bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Bridge failed: 'Client' object has no attribute 'pk'
+May-08|13:03:10 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Bridge failed!
+May-08|13:03:59 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Preparing to bridge 0.0020689 ETH...
+May-08|13:04:00 - bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Bridging 0.0020689 ETH from Optimism to Unichain...
+May-08|13:04:01 - bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Bridge transaction sent: https://optimistic.etherscan.io/tx//tx/0x829d6adfc301b5ef7844d48264b518352472e536211bb1c4186c681ad8e852f7
+May-08|13:04:03 - bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Bridge transaction confirmed successfully!
+May-08|13:04:03 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Bridge successful!
+May-08|13:04:03 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - SUCCESS - Bridge successful: https://optimistic.etherscan.io/tx//tx/0x829d6adfc301b5ef7844d48264b518352472e536211bb1c4186c681ad8e852f7
+May-08|13:15:25 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Preparing to bridge 0.0020701 ETH...
+May-08|13:15:26 - bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Bridging 0.0020701 ETH from Optimism to Unichain...
+May-08|13:15:27 - bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Bridge transaction sent: https://optimistic.etherscan.io/tx/0x2bc3d7cb5b614af9c67560f8251c43bba8adeacbde47a49f1e73eab7eac017d5
+May-08|13:15:29 - bridge.bridge - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Bridge transaction confirmed successfully!
+May-08|13:15:29 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Bridge successful!
+May-08|13:15:29 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - SUCCESS - Bridge successful: https://optimistic.etherscan.io/tx/0x2bc3d7cb5b614af9c67560f8251c43bba8adeacbde47a49f1e73eab7eac017d5
+May-08|13:51:05 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|13:51:05 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping all token balances back to MON one by one...
+May-08|13:51:05 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'AttributeError'>: 'Uniswap' object has no attribute 'list_of_tokens'|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 109, in run
+    self.list_of_tokens)
+    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Uniswap' object has no attribute 'list_of_tokens'
+
+May-08|13:51:05 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-08|13:51:05 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 31 seconds before next task...
+May-08|13:52:26 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|13:52:26 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting swapping 2 times...
+May-08|13:52:26 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 1 time...
+May-08|13:52:26 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'AttributeError'>: 'Uniswap' object has no attribute 'list_of_tokens'|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 128, in run
+    token_out = random.choice([k for k in self.list_of_tokens if k != 'eth'])
+                                          ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Uniswap' object has no attribute 'list_of_tokens'
+
+May-08|13:52:26 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-08|13:52:26 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 47 seconds before next task...
+May-08|14:05:27 - bridge.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Preparing to bridge 0.0020522 ETH...
+May-08|14:06:16 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|14:06:16 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Failed to check balance: Invalid URL 'RpcProviders.OPTIMISM': No scheme supplied. Perhaps you meant https://RpcProviders.OPTIMISM?
+May-08|14:06:16 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Failed to check balance: Invalid URL 'RpcProviders.UNICHAIN': No scheme supplied. Perhaps you meant https://RpcProviders.UNICHAIN?
+May-08|14:06:16 - swap.define_explorer - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Optimism balance: 0.000000 ETH
+May-08|14:06:16 - swap.define_explorer - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Unichain balance: 0.000000 ETH
+May-08|14:06:16 - swap.define_explorer - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Insufficient balance on both chains!
+May-08|14:06:16 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Performing ETH-to-USDT swap...
+May-08|14:06:16 - swap.calculate_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Failed to calculate amount: when sending a str, it must be a hex string. Got: 'ETH'
+May-08|14:06:16 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - WARNING - Swap amount 0.000000 ETH too low for USDT. Skipping.
+May-08|14:06:16 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 0.000000 ETH to USDT...
+May-08|14:06:16 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - 'USDT'. Attempt 1.
+May-08|14:06:40 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - 'USDT'. Attempt 2.
+May-08|14:07:54 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'AttributeError'>: 'Client' object has no attribute 'define_new_provide'|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 64, in start_activities
+    task_cls = TASKS_MAP[task](session=self.session,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 40, in __init__
+    self.unichain_w3 =self.client.define_new_provide(RpcProviders.UNICHAIN)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Client' object has no attribute 'define_new_provide'. Did you mean: 'define_new_provider'?
+
+May-08|14:07:54 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-08|14:07:54 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 14 seconds before next task...
+May-08|14:08:24 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|14:08:24 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Failed to check balance: 'NoneType' object has no attribute 'eth'
+May-08|14:08:24 - swap.check_balance - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Failed to check balance: 'NoneType' object has no attribute 'eth'
+May-08|14:08:24 - swap.define_explorer - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Optimism balance: 0.000000 ETH
+May-08|14:08:24 - swap.define_explorer - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Unichain balance: 0.000000 ETH
+May-08|14:08:24 - swap.define_explorer - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Insufficient balance on both chains!
+May-08|14:08:24 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Performing ETH-to-USDT swap...
+May-08|14:08:24 - swap.calculate_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Failed to calculate amount: when sending a str, it must be a hex string. Got: 'ETH'
+May-08|14:08:24 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - WARNING - Swap amount 0.000000 ETH too low for USDT. Skipping.
+May-08|14:08:24 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 0.000000 ETH to USDT...
+May-08|14:08:24 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - 'USDT'. Attempt 1.
+May-08|14:08:53 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - 'USDT'. Attempt 2.
+May-08|14:13:10 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|14:13:10 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'AttributeError'>: 'types.SimpleNamespace' object has no attribute 'AMOUNT_OF_SWAPS'|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 114, in run
+    amount_of_swaps = random.randint(*CONFIG.UNISWAP.AMOUNT_OF_SWAPS)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'types.SimpleNamespace' object has no attribute 'AMOUNT_OF_SWAPS'
+
+May-08|14:13:10 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-08|14:13:10 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 16 seconds before next task...
+May-08|14:15:25 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|14:15:25 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting swapping...
+May-08|14:15:25 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Your amount 2.5e-05 usdt0 is less than the minimum amount of swaps available.
+May-08|14:15:25 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 2.5e-05 MON to usdt0...
+May-08|14:15:25 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - string indices must be integers, not 'str'. Attempt 1.
+May-08|14:18:28 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|14:18:28 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting swapping...
+May-08|14:18:28 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Your amount 3.7e-05 usdt0 is less than the minimum amount of swaps available.
+May-08|14:18:28 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 3.7e-05 MON to usdt0...
+May-08|14:18:28 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - string indices must be integers, not 'str'. Attempt 1.
+May-08|14:18:48 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - string indices must be integers, not 'str'. Attempt 2.
+May-08|14:19:40 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|14:19:40 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'TypeError'>: object NoneType can't be used in 'await' expression|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 94, in run
+    await self.new_provider()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 25, in new_provider
+    await self.client.define_new_provider(RpcProviders.UNICHAIN)
+TypeError: object NoneType can't be used in 'await' expression
+
+May-08|14:19:40 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-08|14:19:40 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 46 seconds before next task...
+May-08|16:33:56 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|16:33:56 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting swapping...
+May-08|16:33:57 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Your amount 0.0 usdt0 is less than the minimum amount of swaps available.
+May-08|16:33:57 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 0.0 MON to usdt0...
+May-08|16:33:57 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - string indices must be integers, not 'str'. Attempt 1.
+May-08|16:35:26 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|16:35:26 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'AttributeError'>: 'Web3' object has no attribute 'chain_id'|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 91, in run
+    self.logger.info(f"Current chain ID: {self.client.w3.chain_id}")
+                                          ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Web3' object has no attribute 'chain_id'
+
+May-08|16:35:26 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-08|16:35:26 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 25 seconds before next task...
+May-08|16:36:45 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|16:36:45 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Current chain ID: <coroutine object AsyncEth.chain_id at 0x000002A5C40A7F40>
+May-08|16:36:45 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting swapping...
+May-08|16:36:45 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Your amount 2.46e-05 usdt0 is less than the minimum amount of swaps available.
+May-08|16:36:45 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 2.46e-05 MON to usdt0...
+May-08|16:36:45 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - string indices must be integers, not 'str'. Attempt 1.
+May-08|16:37:39 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|16:37:40 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Current chain ID: 10
+May-08|16:37:40 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting swapping...
+May-08|16:37:40 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Your amount 0.0 usdt0 is less than the minimum amount of swaps available.
+May-08|16:37:40 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 0.0 MON to usdt0...
+May-08|16:37:40 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - string indices must be integers, not 'str'. Attempt 1.
+May-08|16:43:14 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|16:43:14 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Current chain ID: 10
+May-08|16:43:14 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'TypeError'>: object NoneType can't be used in 'await' expression|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 92, in run
+    await self.client.define_new_provider(RpcProviders.UNICHAIN, 130)
+TypeError: object NoneType can't be used in 'await' expression
+
+May-08|16:43:14 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-08|16:43:14 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 45 seconds before next task...
+May-08|16:44:05 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|16:44:06 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Current chain ID: 10
+May-08|16:44:06 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'TypeError'>: Constructor parameter should be str|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 93, in run
+    self.logger.info(f"Current chain ID: {await self.client.w3.eth.chain_id}")
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 154, in chain_id
+    return await self._chain_id()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\module.py", line 118, in caller
+    result = await async_w3.manager.coro_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 340, in coro_request
+    response = await self._coro_make_request(method, params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 224, in _coro_make_request
+    return await request_func(method, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\middleware\exception_retry_request.py", line 167, in middleware
+    return await make_request(method, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\providers\async_rpc.py", line 91, in make_request
+    raw_response = await async_make_post_request(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\request.py", line 241, in async_make_post_request
+    response = await async_get_response_from_post_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\request.py", line 234, in async_get_response_from_post_request
+    response = await session.post(endpoint_uri, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 535, in _request
+    url = self._build_url(str_or_url)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 463, in _build_url
+    url = URL(str_or_url)
+          ^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\yarl\_url.py", line 325, in __new__
+    raise TypeError("Constructor parameter should be str")
+TypeError: Constructor parameter should be str
+
+May-08|16:44:06 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-08|16:44:06 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 30 seconds before next task...
+May-08|16:48:39 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|16:48:39 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Current chain ID: 10
+May-08|16:48:39 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'TypeError'>: Constructor parameter should be str|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 94, in run
+    do = await self.client.w3.eth.chain_id
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\eth\async_eth.py", line 154, in chain_id
+    return await self._chain_id()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\module.py", line 118, in caller
+    result = await async_w3.manager.coro_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 340, in coro_request
+    response = await self._coro_make_request(method, params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\manager.py", line 224, in _coro_make_request
+    return await request_func(method, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\middleware\exception_retry_request.py", line 167, in middleware
+    return await make_request(method, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\providers\async_rpc.py", line 91, in make_request
+    raw_response = await async_make_post_request(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\request.py", line 241, in async_make_post_request
+    response = await async_get_response_from_post_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\web3\_utils\request.py", line 234, in async_get_response_from_post_request
+    response = await session.post(endpoint_uri, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 535, in _request
+    url = self._build_url(str_or_url)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 463, in _build_url
+    url = URL(str_or_url)
+          ^^^^^^^^^^^^^^^
+  File "C:\Users\alo33\AppData\Local\Programs\Python\Python312\Lib\site-packages\yarl\_url.py", line 325, in __new__
+    raise TypeError("Constructor parameter should be str")
+TypeError: Constructor parameter should be str
+
+May-08|16:48:39 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-08|16:48:39 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 59 seconds before next task...
+May-08|16:50:32 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|16:50:32 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Current chain ID: 10
+May-08|16:50:32 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Current chain ID: 130
+May-08|16:50:32 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 49 seconds before next task...
+May-08|16:58:09 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'AttributeError'>: 'types.SimpleNamespace' object has no attribute 'RPC_URLS'|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 64, in start_activities
+    task_cls = TASKS_MAP[task](session=self.session,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 28, in __init__
+    self.unichain_rpc = CONFIG.RPC_URLS.get(RpcProviders.UNICHAIN.value, 'https://rpc.unichain.io')
+                        ^^^^^^^^^^^^^^^
+AttributeError: 'types.SimpleNamespace' object has no attribute 'RPC_URLS'
+
+May-08|16:58:09 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-08|16:58:09 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 37 seconds before next task...
+May-08|16:59:08 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|16:59:08 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 37 seconds before next task...
+May-08|17:00:58 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|17:00:58 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Performing ETH-to-USDT0 swap...
+May-08|17:00:58 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 0.003000 ETH to USDT0...
+May-08|17:00:59 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! Actual status=400. Expected=(200, 201)
+May-08|17:00:59 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Response: {"message":"Invalid chain"}
+May-08|17:00:59 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Expected statuses (200, 201), got 400. Attempt 1.
+May-08|17:04:57 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|17:04:57 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Performing ETH-to-USDT0 swap...
+May-08|17:04:58 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 0.002517 ETH to USDT0...
+May-08|17:04:58 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! Actual status=400. Expected=(200, 201)
+May-08|17:04:58 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Response: {"message":"Invalid chain"}
+May-08|17:04:58 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Expected statuses (200, 201), got 400. Attempt 1.
+May-08|17:06:36 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|17:06:36 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Performing ETH-to-USDT0 swap...
+May-08|17:06:36 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 0.002568 ETH to USDT0...
+May-08|17:06:37 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! Actual status=403. Expected=(200, 201)
+May-08|17:06:37 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Response: {"message":"Missing Authentication Token"}
+May-08|17:06:37 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Expected statuses (200, 201), got 403. Attempt 1.
+May-08|17:09:43 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|17:09:43 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Performing ETH-to-USDT0 swap...
+May-08|17:09:43 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 0.002520 ETH to USDT0...
+May-08|17:09:44 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! Actual status=400. Expected=(200, 201)
+May-08|17:09:44 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Response: {"message":"Invalid chain"}
+May-08|17:09:44 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Expected statuses (200, 201), got 400. Attempt 1.
+May-08|17:11:57 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|17:11:57 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Performing ETH-to-USDT0 swap...
+May-08|17:11:57 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - WARNING - Swap amount 0.000000 ETH too low for USDT0. Aborting.
+May-08|17:11:57 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 31 seconds before next task...
+May-08|17:13:17 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|17:13:17 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Performing ETH-to-USDT0 swap...
+May-08|17:13:17 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 0.002517 ETH to USDT0...
+May-08|17:13:18 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! Actual status=400. Expected=(200, 201)
+May-08|17:13:18 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Response: {"message":"Invalid chain"}
+May-08|17:13:18 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Expected statuses (200, 201), got 400. Attempt 1.
+May-08|17:19:12 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|17:19:12 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Performing ETH-to-USDT0 swap...
+May-08|17:19:12 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 0.002517 ETH to USDT0...
+May-08|17:19:13 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! Actual status=400. Expected=(200, 201)
+May-08|17:19:13 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Response: {"message":"Invalid chain"}
+May-08|17:19:13 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Expected statuses (200, 201), got 400. Attempt 1.
+May-08|17:21:41 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|17:21:41 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Performing ETH-to-USDT0 swap...
+May-08|17:21:41 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 0.003000 ETH to USDT0...
+May-08|17:21:42 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! Actual status=400. Expected=(200, 201)
+May-08|17:21:42 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Response: {"message":"Invalid chain"}
+May-08|17:21:42 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Expected statuses (200, 201), got 400. Attempt 1.
+May-08|17:24:30 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|17:24:30 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'AttributeError'>: 'AsyncEth' object has no attribute 'chain'|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 126, in run
+    fo = await self.client.w3.eth.chain
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AsyncEth' object has no attribute 'chain'
+
+May-08|17:24:30 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-08|17:24:30 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 39 seconds before next task...
+May-08|17:32:27 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|17:32:27 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'AttributeError'>: 'AsyncEth' object has no attribute 'chain'|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 69, in start_activities
+    await task_cls.run()
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 126, in run
+    fo = await self.client.w3.eth.chain
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AsyncEth' object has no attribute 'chain'
+
+May-08|17:32:27 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-08|17:32:27 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 43 seconds before next task...
+May-08|17:33:19 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|17:33:19 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Performing ETH-to-USDT0 swap...
+May-08|17:33:19 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 0.002568 ETH to USDT0...
+May-08|17:33:20 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! Actual status=400. Expected=(200, 201)
+May-08|17:33:20 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Response: {"message":"Invalid chain"}
+May-08|17:33:20 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Expected statuses (200, 201), got 400. Attempt 1.
+May-08|17:39:30 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error occured in swap task: <class 'AttributeError'>: 'Uniswap' object has no attribute 'unichain_rpc'|[Traceback (most recent call last):
+  File "d:\Optimistic script\Optisoft\run_optisoft\task.py", line 64, in start_activities
+    task_cls = TASKS_MAP[task](session=self.session,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Optimistic script\Optisoft\run_optisoft\dapps\swap.py", line 28, in __init__
+    self.client.define_new_provider(self.unichain_rpc, 130)
+                                    ^^^^^^^^^^^^^^^^^
+AttributeError: 'Uniswap' object has no attribute 'unichain_rpc'
+
+May-08|17:39:30 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Going to next task...
+May-08|17:39:30 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 38 seconds before next task...
+May-08|17:40:23 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|17:40:23 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Performing ETH-to-USDT0 swap...
+May-08|17:40:23 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 0.002600 ETH to USDT0...
+May-08|17:40:24 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - 'Response' object has no attribute 'status'. Attempt 1.
+May-08|17:43:25 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|17:43:25 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Performing ETH-to-USDT0 swap...
+May-08|17:43:25 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 0.002568 ETH to USDT0...
+May-08|17:43:25 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - 'Uniswap' object has no attribute 'uniswap_chain'. Attempt 1.
+May-08|17:44:09 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|17:44:09 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Performing ETH-to-USDT0 swap...
+May-08|17:44:09 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 0.002517 ETH to USDT0...
+May-08|17:44:10 - swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Response lacks 'status' attribute: <Response [400]>
+May-08|17:44:10 - swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - API request failed: Response object missing 'status'
+May-08|17:44:10 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Response object missing 'status'. Attempt 1.
+May-08|21:15:05 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|21:15:05 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Performing ETH-to-USDT0 swap...
+May-08|21:15:05 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 0.001537 ETH to USDT0...
+May-08|21:15:06 - swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Response lacks 'status' attribute: <Response [400]>
+May-08|21:15:06 - swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - API request failed: Response object missing 'status'
+May-08|21:15:06 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Response object missing 'status'. Attempt 1.
+May-08|21:21:23 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|21:21:23 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Performing ETH-to-USDT0 swap...
+May-08|21:21:23 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - WARNING - Swap amount 0.000000 ETH too low for USDT0. Aborting.
+May-08|21:21:23 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 53 seconds before next task...
+May-08|21:23:30 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|21:23:30 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Performing ETH-to-USDT0 swap...
+May-08|21:23:30 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 0.001537 ETH to USDT0...
+May-08|21:23:30 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - string indices must be integers, not 'str'. Attempt 1.
+May-08|21:23:54 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - string indices must be integers, not 'str'. Attempt 2.
+May-08|21:25:44 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|21:25:44 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Performing ETH-to-USDT0 swap...
+May-08|21:25:45 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 0.001500 ETH to USDT0...
+May-08|21:25:46 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! Actual status=400. Expected=(200, 201)
+May-08|21:25:46 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Response: {"message":"Cannot create swap tx, please try again"}
+May-08|21:25:46 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Expected statuses (200, 201), got 400. Attempt 1.
+May-08|21:26:09 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! Actual status=400. Expected=(200, 201)
+May-08|21:26:09 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Response: {"message":"Cannot create swap tx, please try again"}
+May-08|21:26:09 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Expected statuses (200, 201), got 400. Attempt 2.
+May-08|21:27:27 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|21:27:27 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Performing ETH-to-USDT0 swap...
+May-08|21:27:27 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 0.002000 ETH to USDT0...
+May-08|21:27:28 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! Actual status=400. Expected=(200, 201)
+May-08|21:27:28 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Response: {"message":"Cannot create swap tx, please try again"}
+May-08|21:27:28 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Expected statuses (200, 201), got 400. Attempt 1.
+May-08|21:28:29 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|21:28:29 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Performing ETH-to-USDT0 swap...
+May-08|21:28:29 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 0.001537 ETH to USDT0...
+May-08|21:28:30 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! Actual status=400. Expected=(200, 201)
+May-08|21:28:30 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Response: {"message":"Invalid chain"}
+May-08|21:28:30 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Expected statuses (200, 201), got 400. Attempt 1.
+May-08|21:29:09 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|21:29:09 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Performing ETH-to-USDT0 swap...
+May-08|21:29:10 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 0.002000 ETH to USDT0...
+May-08|21:29:10 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! Actual status=400. Expected=(200, 201)
+May-08|21:29:10 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Response: {"message":"Invalid chain"}
+May-08|21:29:10 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Expected statuses (200, 201), got 400. Attempt 1.
+May-08|21:30:12 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|21:30:12 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Performing ETH-to-USDT0 swap...
+May-08|21:30:12 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 0.001600 ETH to USDT0...
+May-08|21:30:13 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! Actual status=400. Expected=(200, 201)
+May-08|21:30:13 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Response: {"message":"Invalid chain"}
+May-08|21:30:13 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Expected statuses (200, 201), got 400. Attempt 1.
+May-08|21:43:12 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|21:43:12 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Performing ETH-to-USDT0 swap...
+May-08|21:43:13 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 0.001568 ETH to USDT0...
+May-08|21:43:13 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! Actual status=400. Expected=(200, 201)
+May-08|21:43:13 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Response: {"message":"Invalid chain"}
+May-08|21:43:13 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Expected statuses (200, 201), got 400. Attempt 1.
+May-08|21:53:18 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|21:53:18 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Performing ETH-to-USDT0 swap...
+May-08|21:53:23 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 0.002000 ETH to USDT0...
+May-08|21:53:24 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! Actual status=400. Expected=(200, 201)
+May-08|21:53:24 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Response: {"message":"Invalid chain"}
+May-08|21:53:24 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Expected statuses (200, 201), got 400. Attempt 1.
+May-08|21:54:32 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|21:54:32 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Performing ETH-to-USDT0 swap...
+May-08|21:54:33 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 0.001537 ETH to USDT0...
+May-08|21:54:33 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! Actual status=400. Expected=(200, 201)
+May-08|21:54:33 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Response: {"message":"Invalid chain"}
+May-08|21:54:33 - run_optisoft.dapps.swap._generate_url_percentage - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Expected statuses (200, 201), got 400. Attempt 1.
+May-08|21:55:10 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|21:55:10 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Performing ETH-to-USDT0 swap...
+May-08|21:55:10 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - WARNING - Swap amount 0.000000 ETH too low for USDT0. Aborting.
+May-08|21:55:10 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 55 seconds before next task...
+May-08|21:56:24 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|21:56:24 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Performing ETH-to-USDT0 swap...
+May-08|21:56:27 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - WARNING - Swap amount 0.000000 ETH too low for USDT0. Aborting.
+May-08|21:56:27 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 10 seconds before next task...
+May-08|21:57:32 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|21:57:32 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Performing ETH-to-USDT0 swap...
+May-08|21:57:32 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - WARNING - Swap amount 0.000000 ETH too low for USDT0. Aborting.
+May-08|21:57:32 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Sleeping 10 seconds before next task...
+May-08|21:58:19 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|21:58:19 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping all USDT0 balances to ETH...
+May-08|21:58:20 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 4.094899 USDT0 to ETH...
+May-08|21:58:20 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Failed to perform, curl: (3) URL rejected: Malformed input to a URL function. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Attempt 1.
+May-08|21:58:41 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Failed to perform, curl: (3) URL rejected: Malformed input to a URL function. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.. Attempt 2.
+May-08|22:02:23 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|22:02:23 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping all USDT0 balances to ETH...
+May-08|22:02:23 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 4.094899 USDT0 to ETH...
+May-08|22:02:23 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - 'Uniswap' object has no attribute 'uniswap_chain'. Attempt 1.
+May-08|22:03:20 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|22:03:20 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping all USDT0 balances to ETH...
+May-08|22:03:20 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 4.094899 USDT0 to ETH...
+May-08|22:03:21 - swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - API request failed: object dict can't be used in 'await' expression
+May-08|22:03:21 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - object dict can't be used in 'await' expression. Attempt 1.
+May-08|22:06:08 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|22:06:08 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping all USDT0 balances to ETH...
+May-08|22:06:10 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 4.094899 USDT0 to ETH...
+May-08|22:06:11 - swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - API request failed: 'Response' object has no attribute 'status'
+May-08|22:06:11 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - 'Response' object has no attribute 'status'. Attempt 1.
+May-08|22:07:19 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|22:07:19 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping all USDT0 balances to ETH...
+May-08|22:07:30 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 4.094899 USDT0 to ETH...
+May-08|22:07:31 - swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - API request failed: 'Response' object has no attribute 'status'
+May-08|22:07:31 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - 'Response' object has no attribute 'status'. Attempt 1.
+May-08|22:08:00 - swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - API request failed: 'Response' object has no attribute 'status'
+May-08|22:08:00 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - 'Response' object has no attribute 'status'. Attempt 2.
+May-08|22:08:26 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|22:08:26 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping all USDT0 balances to ETH...
+May-08|22:08:27 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 4.094899 USDT0 to ETH...
+May-08|22:08:27 - swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - API request failed: 'Response' object has no attribute 'status'
+May-08|22:08:27 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - 'Response' object has no attribute 'status'. Attempt 1.
+May-08|22:10:06 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|22:10:06 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping all USDT0 balances to ETH...
+May-08|22:10:18 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 4.094899 USDT0 to ETH...
+May-08|22:10:19 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! Actual status=400. Expected=(200, 201)
+May-08|22:10:19 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Response: {"message":"Invalid chain"}
+May-08|22:10:19 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Expected statuses (200, 201), got 400. Attempt 1.
+May-08|22:12:01 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|22:12:01 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping all USDT0 balances to ETH...
+May-08|22:12:06 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 4.094899 USDT0 to ETH...
+May-08|22:12:06 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! Actual status=400. Expected=(200, 201)
+May-08|22:12:06 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Response: {"message":"Invalid chain"}
+May-08|22:12:06 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Expected statuses (200, 201), got 400. Attempt 1.
+May-08|22:15:34 - task.start_activities - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Starting task swap...
+May-08|22:15:34 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping all USDT0 balances to ETH...
+May-08|22:15:35 - swap.run - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - INFO - Swapping 4.094899 USDT0 to ETH...
+May-08|22:15:36 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Error! Actual status=400. Expected=(200, 201)
+May-08|22:15:36 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Response: {"message":"Invalid chain"}
+May-08|22:15:36 - run_optisoft.dapps.swap._generate_url_amount - PK: 70e4cd | Address: 0xf9a60A87f46200D816a8FB52a6f928F0e004c075 - ERROR - Expected statuses (200, 201), got 400. Attempt 1.
